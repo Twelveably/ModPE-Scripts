@@ -1,0 +1,13 @@
+function procCmd(cmd) {
+    cmd = cmd.toLowerCase();
+    if (cmd == "info"){
+        clientMessage("<Bagas> /remove (ent). /help")
+             }
+           if (cmd == "remove"){
+              clientMessage("Sorry, But Removing is not added yet :/");
+           }
+           if (cmd == "help"){
+              clientMessage("<Bagas> /give (item id) /Remove (entity) /gamemode (creative or survival) /kill (player name) /say (your message) /gamemode");
+              if (cmd == "gamemode survival"){
+              (({function: getGamemode(survival)}))}}}
+
