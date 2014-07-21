@@ -1,0 +1,29 @@
+function procCmd(cmd) {
+    cmd = cmd.toLowerCase();
+    if (cmd == "hello"){
+        clientMessage("<Enderman> Hello :D!" )
+             }
+           if (cmd == "help"){
+              clientMessage("<Bagas> to interact with endy use /hello, /howareyou?, /whosthat? /hmm /stopit! /youhavesomeenderpearls?. more commands coming soon! ");
+           }
+           if (cmd == "command"){
+              clientMessage("<Bagas> Type /help");
+              }
+           if (cmd == "howareyou?"){
+              clientMessage("<Enderman> Im Fine :D, you?");
+              }
+           if (cmd == "whosthat?"){
+              clientMessage("<Enderman> ITS JUSTIN BIEBER HORY SHET");
+              }
+           if (cmd == "hmm"){
+              clientMessage("<Enderman> Eh.. thinking something bro? or you are just a villager?");
+              }
+           if (cmd == "stopit!"){
+              clientMessage("<Enderman> I DIDNT DO ANYTHING BAD PLEASE DONT ARREST ME D:");
+              }
+           if (cmd == "youhavesomeenderpearls?"){
+              clientMessage("<Enderman> well i got 10..sadly jeb didnt make me drop or give any pearls :( sorry!");
+}
+
+
+}
