@@ -1,0 +1,10 @@
+
+function useItem (x, y, z,itemId, blockId, side)
+{
+    if(itemId == 267)//If the item used..
+    {
+        var custom = Level.spawnMob(x,y+1,z,11,"mob/enderman.png");
+        Entity.setRenderType(custom,19); 
+        
+ clientMessage("<Enderman> Joined The Game");
+       {
