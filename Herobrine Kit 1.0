@@ -1,0 +1,26 @@
+ModPE.setItem(344, "ender_pearl", 0, "Herobrine's Teleporter");
+ModPE.setItem(502, "fireball", 0, "Herobrine's Secret Weapon");
+ModPE.setItem(328, "boat", 0, "Herobrine's Escaping Boat");
+ModPE.setItem(352, "bone", 0, "Evil Steve Spawner");
+
+function attackHook(attacker, victim){
+
+if(Player.getCarriedItem() == 502){
+
+var dmg = 99999;
+
+Entity.setHealth(victim, Entity.getHealth(victim) - dmg);
+
+Entity.setFireTicks(victim, 50)
+{
+ function useItem(x, y, z,itemId, blockId, side)//useItem Code goes here
+{
+    if(itemId == 502)
+      {
+      explode(x,y,z,50)
+}
+}
+}
+}
+}
+        
