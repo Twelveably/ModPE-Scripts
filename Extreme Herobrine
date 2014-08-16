@@ -2,7 +2,7 @@
 
 var Herobrine;
 
-ModPE.overrideTexture("images/herobrineextreme.png", "dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
+ModPE.overrideTexture("images/herobrineextreme.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
 {
     if(itemId == 267)//If the item used is a stick
