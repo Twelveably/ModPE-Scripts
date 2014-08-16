@@ -2,11 +2,12 @@
 
 var Herobrine;
 
+ModPE.overrideTexture("images/herobrineextreme.png", "dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
 {
     if(itemId == 267)//If the item used is a stick
     {
-        var Herobrine = Level.spawnMob(x,y+1,z,38,"mob/char.png"); //spawns mob, variable "custom", and uses the skin char
+        var Herobrine = Level.spawnMob(x,y+1,z,38,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
         Entity.setRenderType(Herobrine,3); //changes the rendertype of the mob custom to a player
 ModPE.showTipMessage("You have spawned herobrine,Herobrines health is: 50")
   
@@ -29,7 +30,7 @@ Level.addParticle(ParticleType.lava, Entity.getX(Herobrine) , Entity.getY(Herobr
 Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)+0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
 }
 function deathHook(a, Herobrine){//when a mob dies
-if (Entity.getMobSkin(Herobrine)=="mob/char.png"){//if the mob has that mob skin
+if (Entity.getMobSkin(Herobrine)=="herobrineextreme.png"){//if the mob has that mob skin
 ModPE.showTipMessage("CRITICAL HIT!!!!: " + (Entity.getHealth(Herobrine) / 2));
 ModPE.showTipMessage("CRITICAL HIT!!!!: " + (Entity.getHealth(Herobrine) / 2));
 Level.dropItem(Entity.getX(Herobrine),Entity.getY(Herobrine),Entity.getZ(Herobrine),1,10,2);//drops some fire and lava :P
@@ -93,7 +94,7 @@ clientMessage(ChatColor.DARK_GREEN + "Dont forget to wipe these mess -_-'")
 	}	} 	
 
 function attackHook(a, v){//when something attacks
-if(Entity.getMobSkin(v)=="mob/char.png"){//if the victim has that mob skins
+if(Entity.getMobSkin(v)=="herobrineextreme.png"){//if the victim has that mob 
 Level.playSoundEnt(v, "mob.zombiepig.zpigangry", 100, 30);//plays a 
 ModPE.showTipMessage("Herobrine's health: " + (Entity.getHealth(v) / 2));
 Level.spawnMob(Entity.getX(v), Entity.getY(v) ,Entity.getZ(v)+1,19,"mob/enderman.png");
