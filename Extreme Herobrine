@@ -14,7 +14,6 @@ Item.addCraftRecipe(368, 1, 0, [340,4,0, 331,1,0, 340,4,0]);
 
 var Herobrine;
 
-ModPE.overrideTexture("images/herobrineextreme.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
 {
     if(itemId == 454)//If the item used is nothing
@@ -22,7 +21,7 @@ function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
         var Herobrine = Level.spawnMob(x,y+1,z,38,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
         Entity.setRenderType(Herobrine,3); //changes the rendertype of the mob custom to a player
 ModPE.showTipMessage("You have spawned herobrine,Herobrines health is: 50")
-  
+ ModPE.overrideTexture("images/herobrineextreme.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 Entity.setNameTag(Herobrine, "Herobrine");//gives the mob a nametag cause #yolo
 Entity.setHealth(Herobrine, 100);//sets the mobs health to 70
 }
