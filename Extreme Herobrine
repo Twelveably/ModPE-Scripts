@@ -7,7 +7,7 @@ ModPE.setItem(368,"ender_pearl", 0, "Ender Pearl");
 ModPE.setItem(369,"blaze_rod", 0, "Blaze Rod");
 
 Item.addCraftRecipe(454, 1, 0, [456,4,0, 381,1,0, 456,4,0]);
-Item.addCraftRecipe(456, 10, 0, [352,4,0, 381,1,0, 352,4,0]);
+Item.addCraftRecipe(456, 2, 0, [352,4,0, 381,1,0, 352,4,0]);
 Item.addCraftRecipe(381, 2, 0, [368,4,0, 369,1,0, 368,4,0]);
 Item.addCraftRecipe(369, 2, 0, [264,2,0, 264,2,0, 264,2,0]);
 Item.addCraftRecipe(368, 1, 0, [340,4,0, 331,1,0, 340,4,0]);
