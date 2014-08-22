@@ -1,11 +1,23 @@
 //Scripted by bagas
 
+ModPE.setItem(454,"apple_golden", 0, "Spawner of Herobrine");
+ModPE.setItem(456,"gold_nugget", 0, "Golden Tears");
+ModPE.setItem(381,"ender_eye", 0, "Eye of Ender");
+ModPE.setItem(368,"ender_pearl", 0, "Ender Pearl");
+ModPE.setItem(369,"blaze_rod", 0, "Blaze Rod");
+
+Item.addCraftRecipe(454, 1, 0, [456,4,0, 381,1,0, 456,4,0]);
+Item.addCraftRecipe(456, 10, 0, [352,4,0, 381,1,0, 352,4,0]);
+Item.addCraftRecipe(381, 2, 0, [368,4,0, 369,1,0, 368,4,0]);
+Item.addCraftRecipe(369, 2, 0, [264,2,0, 264,2,0, 264,2,0]);
+Item.addCraftRecipe(368, 1, 0, [340,4,0, 331,1,0, 340,4,0]);
+
 var Herobrine;
 
 ModPE.overrideTexture("images/herobrineextreme.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
 {
-    if(itemId == 267)//If the item used is a stick
+    if(itemId == 454)//If the item used is nothing
     {
         var Herobrine = Level.spawnMob(x,y+1,z,38,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
         Entity.setRenderType(Herobrine,3); //changes the rendertype of the mob custom to a player
