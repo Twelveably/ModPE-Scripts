@@ -1,5 +1,6 @@
 //Scripted by bagas
 
+ ModPE.overrideTexture("images/herobrineextreme.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 ModPE.setItem(454,"apple_golden", 0, "Spawner of Herobrine");
 ModPE.setItem(456,"gold_nugget", 0, "Golden Tears");
 ModPE.setItem(381,"ender_eye", 0, "Eye of Ender");
@@ -21,7 +22,6 @@ function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
         var Herobrine = Level.spawnMob(x,y+1,z,38,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
         Entity.setRenderType(Herobrine,3); //changes the rendertype of the mob custom to a player
 ModPE.showTipMessage("You have spawned herobrine,Herobrines health is: 50")
- ModPE.overrideTexture("images/herobrineextreme.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 Entity.setNameTag(Herobrine, "Herobrine");//gives the mob a nametag cause #yolo
 Entity.setHealth(Herobrine, 100);//sets the mobs health to 70
 }
