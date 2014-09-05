@@ -1,5 +1,6 @@
 //Scripted by bagas
 
+//*items,texture*//
  ModPE.overrideTexture("images/herobrineextreme.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 ModPE.setItem(454,"apple_golden", 0, "Spawner of Herobrine");
 ModPE.setItem(456,"gold_nugget", 0, "Golden Tears");
@@ -7,12 +8,14 @@ ModPE.setItem(381,"ender_eye", 0, "Eye of Ender");
 ModPE.setItem(368,"ender_pearl", 0, "Ender Pearl");
 ModPE.setItem(369,"blaze_rod", 0, "Blaze Rod");
 
+//*crafting recipes*//
 Item.addCraftRecipe(454, 1, 0, [456,4,0, 381,1,0, 456,4,0]);
 Item.addCraftRecipe(456, 2, 0, [352,4,0, 381,1,0, 352,4,0]);
 Item.addCraftRecipe(381, 2, 0, [368,4,0, 369,1,0, 368,4,0]);
 Item.addCraftRecipe(369, 2, 0, [264,2,0, 264,2,0, 264,2,0]);
 Item.addCraftRecipe(368, 1, 0, [340,4,0, 331,1,0, 340,4,0]);
 
+//*spawner*//
 var Herobrine;
 
 function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
@@ -21,11 +24,13 @@ function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
     {
         var Herobrine = Level.spawnMob(x,y+1,z,38,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
         Entity.setRenderType(Herobrine,3); //changes the rendertype of the mob custom to a player
-ModPE.showTipMessage("4 Endermans and Herobrine's Soul Grouped together to be an strong enemy...")
+ModPE.showTipMessage("Hello There...")
 Entity.setNameTag(Herobrine, "Herobrine");//gives the mob a nametag cause #yolo
 Entity.setHealth(Herobrine, 100);//sets the mobs health to 70
 }
 }
+
+//*Debug Buggy Function (DBF)*//
 function modTick(){
 Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)-0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
 Level.addParticle(ParticleType.lava, Entity.getX(Herobrine) , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
@@ -40,6 +45,7 @@ Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)-0.2 , Entity.getY(He
 Level.addParticle(ParticleType.lava, Entity.getX(Herobrine) , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
 Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)+0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
 }
+//*death message*//
 function deathHook(a, Herobrine){//when a mob dies
 if (Entity.getMobSkin(Herobrine)=="herobrineextreme.png"){//if the mob has that mob skin
 ModPE.showTipMessage("CRITICAL HIT!!!!: " + (Entity.getHealth(Herobrine) / 2));
@@ -103,7 +109,7 @@ clientMessage(ChatColor.DARK_GREEN + "-= YOU WIN THE LAST BOSS =-")
 clientMessage(ChatColor.DARK_BLUE + "Remember to Subscribe To TheCreepLuigi!")
 clientMessage(ChatColor.DARK_GREEN + "Dont forget to wipe these mess -_-'")
 	}	} 	
-
+//*attack hook*//
 function attackHook(a, v){//when something attacks
 if(Entity.getMobSkin(v)=="herobrineextreme.png"){//if the victim has that mob 
 Level.playSoundEnt(v, "mob.zombiepig.zpigangry", 100, 30);//plays a 
@@ -437,3 +443,4 @@ Level.spawnMob(Entity.getX(v), Entity.getY(v) ,Entity.getZ(v)+1,32,"mob/zombie.p
 
 }
 }
+
