@@ -1,0 +1,7 @@
+//New Update Sneak Peek//
+Block.defineBlock(255,"Herobrine Trophy","dragon_egg",1,false,13);
+Block.setLightLevel(255,15);
+Block.setExplosionResistance(255,10000000000000);
+Block.setDestroyTime(255,10);
+Block.setRenderLayer(255,1);
+//Block Id is 255!//
