@@ -1,12 +1,19 @@
 //Scripted by bagas
 
+function newLevel() {
+ clientMessage(ChatColor.YELLOW + "Extreme Herobrine by BagasMC")
+ }
+
 //*global variables*//
-var version = "4.5";
+var version = "1.4.8";
 var newVersion;
 var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
+var Herobrine;
+var AltBrine;
 
 //*items,texture*//
  ModPE.overrideTexture("images/herobrineextreme.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
+ ModPE.overrideTexture("images/altbrine.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
 ModPE.setItem(454,"apple_golden", 0, "Spawner of Herobrine");
 ModPE.setItem(456,"gold_nugget", 0, "Golden Tears");
 ModPE.setItem(381,"ender_eye", 0, "Eye of Ender");
@@ -21,21 +28,37 @@ Item.addCraftRecipe(369, 2, 0, [264,2,0, 264,2,0, 264,2,0]);
 Item.addCraftRecipe(368, 1, 0, [340,4,0, 331,1,0, 340,4,0]);
 
 //*spawner*//
-var Herobrine;
 
 function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
 {
     if(itemId == 454)//If the item used is nothing
     {
-        var Herobrine = Level.spawnMob(x,y+1,z,38,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
+        var Herobrine = Level.spawnMob(x,y,z,38,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
         Entity.setRenderType(Herobrine,3); //changes the rendertype of the mob custom to a player
 ModPE.showTipMessage("Hello There...")
 Entity.setNameTag(Herobrine, "Herobrine");//gives the mob a nametag cause #yolo
 Entity.setHealth(Herobrine, 100);//sets the mobs health to 70
 }
 }
+function procCmd(c) {
+   var m = c.split(' ');
+   var command = m[0];
+   switch(command) {
+           case 'herobrine': {
+ clientMessage(ChatColor.GOLD + '[SGMS] §fAlternate Herobrine Boss has SPAWNED');
+ AltBrine = Level.spawnMob(Player.getX(), Player.getY(), Player.getZ(), 34,"altbrine.png");
+Entity.setHealth( AltBrine ,150);
+Entity.setRenderType( AltBrine , 3);
+Entity.setCarriedItem( AltBrine, 278, 1, 30);
+break;}
+};
+}
 
-//*Debug Buggy Function (DBF)*//
+
+
+
+
+//*Debug Function (DF)*//
 function modTick(){
 Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)-0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
 Level.addParticle(ParticleType.lava, Entity.getX(Herobrine) , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
@@ -110,9 +133,9 @@ Level.spawnMob(Entity.getX(Herobrine), Entity.getY(Herobrine) ,Entity.getZ(Herob
 Level.spawnMob(Entity.getX(Herobrine), Entity.getY(Herobrine) ,Entity.getZ(Herobrine)+1,38,"mob/enderman.png");
 Level.spawnMob(Entity.getX(Herobrine), Entity.getY(Herobrine) ,Entity.getZ(Herobrine)+1,38,"mob/enderman.png");
 Level.spawnMob(Entity.getX(Herobrine), Entity.getY(Herobrine) ,Entity.getZ(Herobrine)+1,38,"mob/enderman.png");
-clientMessage(ChatColor.DARK_GREEN + "-= YOU WIN THE LAST BOSS =-")
-clientMessage(ChatColor.DARK_BLUE + "Remember to Subscribe To TheCreepLuigi!")
-clientMessage(ChatColor.DARK_GREEN + "Dont forget to wipe these mess -_-'")
+clientMessage(ChatColor.DARK_RED + "HOW DARE YOU");
+clientMessage(ChatColor.DARK_BLUE + "TASTE THAT HAHAHA");
+clientMessage(ChatColor.YELLOW + "Mod Creator : Bagas");
 	}	} 	
 //*attack hook*//
 function attackHook(a, v){//when something attacks
@@ -571,3 +594,4 @@ function updateScript() {
 		errorMsg("Line 484: " + e);
 	}
 }
+
