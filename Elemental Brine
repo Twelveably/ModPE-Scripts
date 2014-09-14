@@ -1,0 +1,66 @@
+var AltBrine1;
+var AltBrine2;
+var AltBrine3;
+var AltBrine4;
+
+ModPE.overrideTexture("images/altbrine.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
+
+var AltBrine;
+function useItem(x, y, z, itemId, blockId, side){
+if(Level.getTile(x, y+1, z)==0){
+if(Level.getTile(x, y, z)==87){
+if(Level.getTile(x, y-1, z)==87){
+if(Level.getTile(x, y-2, z)==41){
+if(Level.getTile(x, y-3, z)==41){
+
+Level.setTile(x, y+1, z, 51);
+Level.setTile(x, y, z, 246);
+Level.setTile(x, y-1, z, 246);
+Level.setTile(x, y-2, z, 49);
+Level.setTile(x, y-3, z, 49);
+
+clientMessage(ChatColor.RED + "I WILL GRIEF YOU");
+Level.playSound(x, y, z, "random.explode", 100, 30);
+AltBrine = Level.spawnMob(x+2, y, z, 34,"altbrine.png");
+Entity.setHealth( AltBrine ,250);
+Entity.setRenderType( AltBrine , 3);
+Entity.setCarriedItem( AltBrine, 278, 1, 30);
+
+}}}}}}
+function deathHook (attacker, victim) 
+{ 
+if(victim==AltBrine){
+AltBrine1 = Level.spawnMob( Entity.getX( AltBrine ) , Entity.getY( AltBrine ) , Entity.getZ( AltBrine ), 32, "altbrine.png" );
+Entity.setHealth( AltBrine1 ,150);
+Entity.setRenderType( AltBrine1 , 3);
+Entity.remove( AltBrine );
+clientMessage(ChatColor.RED + "I WILL EAT YOU");
+}
+if(victim==AltBrine1){
+AltBrine2 = Level.spawnMob( Entity.getX( AltBrine1 ) , Entity.getY( AltBrine1 ) , Entity.getZ( AltBrine1 ), 35, "altbrine.png" );
+Entity.setHealth( AltBrine2 ,50);
+Entity.setRenderType( AltBrine2 , 3);
+Entity.remove( AltBrine1);
+clientMessage(ChatColor.RED + "I WILL JUMP ON YOU");
+}
+if(victim==AltBrine2){
+AltBrine3 = Level.spawnMob( Entity.getX( AltBrine2 ) , Entity.getY( AltBrine2 ) , Entity.getZ( AltBrine2 ), 39, "altbrine.png" );
+Entity.setHealth( AltBrine3 ,40);
+Entity.setRenderType( AltBrine3 , 3);
+Entity.remove( AltBrine2 );
+clientMessage(ChatColor.RED + "YOU WONT DEFEAT ME EASILY");
+}
+if(victim==AltBrine3){
+AltBrine4 = Level.spawnMob( Entity.getX( AltBrine3 ) , Entity.getY( AltBrine3 ) , Entity.getZ( AltBrine3 ), 34, "altbrine.png" );
+Entity.setHealth( AltBrine4 ,40);
+Entity.setRenderType( AltBrine4 , 3);
+Entity.remove( AltBrine3 );
+Entity.setCarriedItem( AltBrine4, 276, 5, 30);
+clientMessage(ChatColor.RED + "I WILL KILL YOU");
+}
+if(victim==AltBrine4){
+   Level.dropItem(Entity.getX(victim), Entity.getY(victim), Entity.getZ(victim), 1,331, 1,0)
+Level.dropItem(Entity.getX(victim), Entity.getY(victim), Entity.getZ(victim), 1,441, 1,0)
+clientMessage(ChatColor.RED + "NOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+} 
+}
