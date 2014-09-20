@@ -1,3 +1,17 @@
+// Copyright@ BagasMC 
+
+//*----------------------------*//*----------------------------*//*----------------------------*//
+
+// Terms of Services
+
+     //- This mod is NOT affiliated w/n any other mods.
+    //- You are NOT allowed to make a sequel nor copy of this mod
+   //- You are NOT allowed to post the mod as your name >:(
+  //- You are allowed to make a review
+ //- Do NOT even use adfly or linkbucks to the mod link if you are going to put it in any websites because    i DONT want my CUSTOMERS / Mod Users needs to wait 5 / 10 SECONDS FOR MY MOD
+
+//*----------------------------*//*----------------------------*//*----------------------------*//
+
 //Scripted by bagas
 
 function newLevel() {
@@ -33,11 +47,12 @@ function useItem (x, y, z,itemId, blockId, side)//useItem Code goes here
 {
     if(itemId == 454)//If the item used is nothing
     {
-        var Herobrine = Level.spawnMob(x,y,z,38,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
+        var Herobrine = Level.spawnMob(x,y+1,z,15,"herobrineextreme.png"); //spawns mob, variable "custom", and uses the skin char
         Entity.setRenderType(Herobrine,3); //changes the rendertype of the mob custom to a player
 ModPE.showTipMessage("Hello There...")
 Entity.setNameTag(Herobrine, "Herobrine");//gives the mob a nametag cause #yolo
 Entity.setHealth(Herobrine, 100);//sets the mobs health to 70
+ModPE.setFov(150)
 }
 }
 function procCmd(c) {
@@ -60,18 +75,11 @@ break;}
 
 //*Debug Function (DF)*//
 function modTick(){
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)-0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine) , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)+0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)-0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine) , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)+0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)-0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine) , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)+0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)-0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine) , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
-Level.addParticle(ParticleType.lava, Entity.getX(Herobrine)+0.2 , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
+if (Entity.getMobSkin(Herobrine)=="herobrineextreme.png"){
+Level.addParticle(ParticleType.flame, Entity.getX(Herobrine) , Entity.getY(Herobrine)+1, Entity.getZ(Herobrine), 0, 0, 0, 2);
+Level.addParticle(ParticleType.flame, Entity.getX(Herobrine) , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
+Level.addParticle(ParticleType.flame, Entity.getX(Herobrine)+1 , Entity.getY(Herobrine), Entity.getZ(Herobrine), 0, 0, 0, 2);
+}
 }
 //*death message*//
 function deathHook(a, Herobrine){//when a mob dies
@@ -136,6 +144,7 @@ Level.spawnMob(Entity.getX(Herobrine), Entity.getY(Herobrine) ,Entity.getZ(Herob
 clientMessage(ChatColor.DARK_RED + "HOW DARE YOU");
 clientMessage(ChatColor.DARK_BLUE + "TASTE THAT HAHAHA");
 clientMessage(ChatColor.YELLOW + "Mod Creator : Bagas");
+ModPE.resetFov()
 	}	} 	
 //*attack hook*//
 function attackHook(a, v){//when something attacks
