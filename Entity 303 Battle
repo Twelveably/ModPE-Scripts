@@ -1,0 +1,173 @@
+var Entity_303;
+var time = 10000;
+var countdown = false;
+ModPE.overrideTexture("images/mob/Entity.png", "https://dl.dropboxusercontent.com/s/tlkcvjnp9sacqo7/Entity%20303.png");
+
+function newLevel(){ 
+ModPE.setGameSpeed(20);
+}
+
+function procCmd(cmd) {
+	c = cmd.split(" ");
+	if(c[0] == "start")
+	{
+		clientMessage(ChatColor.RED + "Your game will begin in");
+		clientMessage("Get Ready....");
+		countdown = true;
+	}
+}
+
+   function modTick(){
+  	if(countdown == true)
+	{
+  time--;
+  if(time == 9750){
+  clientMessage(ChatColor.DARK_RED + "ACTION!!!!!")
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+2,65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-2,65);
+  Level.spawnMob(getPlayerX()+2,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX()-2,getPlayerY(),getPlayerZ(),65);
+  }
+  if(time == 9550){
+  clientMessage("I will finish you");
+  Entity_303 = Level.spawnMob(getPlayerX()+1,getPlayerY(),getPlayerZ() ,39,"mob/Entity.png"); 
+  Entity.setRenderType(Entity_303,3);
+  Entity.setHealth(Entity_303, 5000);
+ }
+ if(time == 9350){
+ clientMessage("<Notch> I WILL DELETE HIM FOR YOU");
+ Entity.remove(Entity_303)
+ }
+ if(time == 9150){
+ clientMessage(ChatColor.RED + "I will never be removed..")
+  Entity_303 = Level.spawnMob(getPlayerX(),getPlayerY()+1,getPlayerZ()+1 ,39,"mob/Entity.png"); 
+  Entity.setRenderType(Entity_303,3);
+  Entity.setHealth(Entity_303, 10000);
+  ModPE.setGameSpeed(10);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+2,65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-2,65);
+  Level.spawnMob(getPlayerX()+2,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX()-2,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+5,65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-5,65);
+  Level.spawnMob(getPlayerX()+5,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX()-5,getPlayerY(),getPlayerZ(),65);
+  }
+  if(time == 8750){
+  clientMessage("Like it?");
+  ModPE.setGameSpeed(20);
+  Entity.remove(Entity_303);
+  }
+  if(time == 8550){
+  clientMessage("Lets play another game..");
+  Entity.setFireTicks(getPlayerEnt(), 10);
+  Level.explode(getPlayerX(),getPlayerY(),getPlayerZ(),20);
+  }
+  if(time == 8450){
+  clientMessage("MWAHAHAHAHAH");
+  }
+  if(time == 8420){
+  clientMessage(ChatColor.DARK_RED + "READY FOR NEXT PHASE?");
+  clientMessage(ChatColor.RED + "FINISH HIM 303 ARMY");
+  Level.spawnMob(getPlayerX()+3,getPlayerY(),getPlayerZ(),34);
+  Level.spawnMob(getPlayerX()-3,getPlayerY(),getPlayerZ(),34);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+3,34);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-3,34);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+2,34);
+  Level.spawnMob(getPlayerX()-2,getPlayerY(),getPlayerZ(),34);
+  }
+  if(time == 8410){
+  clientMessage(ChatColor.RED + " ITS NOT ENDED YET");
+  }
+  if(time == 8100){
+  clientMessage(ChatColor.DARK_RED + "I WILL NOT GOING EASY ON U");
+  Entity_303 = Level.spawnMob(getPlayerX(),getPlayerY()+1,getPlayerZ()+1 ,39,"mob/Entity.png"); 
+  Entity.setRenderType(Entity_303,3);
+  Entity.setHealth(Entity_303, 10000);
+  Level.spawnMob(getPlayerX()+3,getPlayerY(),getPlayerZ(),33);
+  Level.spawnMob(getPlayerX()-3,getPlayerY(),getPlayerZ(),33);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+3,33);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-3,33);
+  }
+  if(time == 8100){
+  clientMessage(ChatColor.RED + "MWAHAHAAHAHAHAHA");
+  }
+  if(time == 8100){
+  Entity.remove(Entity_303);
+  }
+  if(time == 7850){
+  clientMessage("Ha! You think you can defeat me?");
+  Level.spawnMob(getPlayerX()+3,getPlayerY(),getPlayerZ(),34);
+  Level.spawnMob(getPlayerX()-3,getPlayerY(),getPlayerZ(),34);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+3,34);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-3,34);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+2,34);
+  Level.spawnMob(getPlayerX()-2,getPlayerY(),getPlayerZ(),34);
+  }
+  if(time == 7750){
+  clientMessage("The answer is NEVER");
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+2,65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-2,65);
+  Level.spawnMob(getPlayerX()+2,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX()-2,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+5,65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-5,65);
+  Level.spawnMob(getPlayerX()+5,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX()-5,getPlayerY(),getPlayerZ(),65);
+  }
+  if(time == 7550){
+  clientMessage("Stop playing this game");
+  clientMessage("Soon the minecraft universe will be MINE!!");
+  Level.spawnMob(getPlayerX()+3,getPlayerY(),getPlayerZ(),33);
+  Level.spawnMob(getPlayerX()-3,getPlayerY(),getPlayerZ(),33);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+3,33);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-3,33);
+  }
+  if(time == 7350){
+  clientMessage("MWAHAHAHAHAHAHAHAHHA");
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+2,65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-2,65);
+  Level.spawnMob(getPlayerX()+2,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX()-2,getPlayerY(),getPlayerZ(),65);
+  }
+  if(time == 7340){
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()+2,65);
+  Level.spawnMob(getPlayerX(),getPlayerY(),getPlayerZ()-2,65);
+  Level.spawnMob(getPlayerX()+2,getPlayerY(),getPlayerZ(),65);
+  Level.spawnMob(getPlayerX()-2,getPlayerY(),getPlayerZ(),65);
+  }
+  if(time == 7250){
+  clientMessage("STOP STEPPING YOUR FOOT IN THIS STUPID MINECRAFT GAME");
+  Entity_303 = Level.spawnMob(getPlayerX()+1,getPlayerY(),getPlayerZ() ,39,"mob/Entity.png"); 
+  Entity.setRenderType(Entity_303,3);
+  Entity.setHealth(Entity_303, 5000);
+  }
+  if(time == 7110){
+  clientMessage("<Notch> I will heal you and dont give up..");
+  Player.setHealth(10000);
+  }
+  if(time == 7110){
+  clientMessage("I WILL KILL YOU AND NOTCH NOW");
+  Level.explode(getPlayerX(),getPlayerY(),getPlayerZ(),5);
+  }
+  if(time == 7000){
+  clientMessage("Hahahaha!!!");
+  Entity.remove("Entity_303");
+  }
+  if(time == 6850){
+  Entity_303 = Level.spawnMob(getPlayerX()+1,getPlayerY(),getPlayerZ() ,33,"mob/Entity.png"); 
+  Entity.setRenderType(Entity_303,3);
+  Entity.setHealth(Entity_303, 5000);
+  clientMessage("I'm warning you... get out!");
+  }
+  if(time == 6750){
+  clientMessage("<Herobrine> I'm going to help you player!");
+  Player.setHealth(10000);
+  }
+  if(time == 6550){
+  clientMessage("OK! Im still continuing this part!");
+ }
+ }
+ }
+ 
+ 
