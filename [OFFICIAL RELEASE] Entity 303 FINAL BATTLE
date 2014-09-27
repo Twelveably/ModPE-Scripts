@@ -180,7 +180,7 @@ function procCmd(cmd) {
   }
   if(time == 7110){
   clientMessage("<Notch> I will heal you and dont give up..");
-  Player.setHealth(10000);
+  Player.setHealth(20);
   }
   if(time == 7050){
   clientMessage(ChatColor.RED + "I WILL KILL YOU AND NOTCH NOW");
@@ -199,7 +199,7 @@ function procCmd(cmd) {
   if(time == 6750){
   clientMessage(ChatColor.RED + "*SLASH*");
   clientMessage("HAHAHAAHAHAHAH");
-  Player.setHealth(7);
+  Player.setHealth(10);
   }
   if(time == 6450){
   clientMessage("How come your still there,");
@@ -251,7 +251,7 @@ function procCmd(cmd) {
   if(time == 6150){
   ModPE.setGameSpeed(20);
   clientMessage("I will heal you for..");
-  Player.setHealth(100);
+  Player.setHealth(20);
   }
   if(time == 6000){
   clientMessage("HUGE HORDE OF SKELETONS");
