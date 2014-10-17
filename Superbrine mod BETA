@@ -1,0 +1,219 @@
+//Type '/help' in game*/
+
+var credits="§8Herobrine mod by Bagas and Thanks for §5Sin§d0§5psysS for letting me to use his flying code."
+var Herobrine;
+var countdown=-1;
+var count=-1;
+var fire=-1;
+var ball=-1;
+var x;
+var y;
+var z;
+var a;
+var b;
+var c;
+var recurrent=19;
+var recurrent2=80;
+var height=4;
+ModPE.overrideTexture("images/mob/herobrine.png", "https://dl.dropbox.com/s/1fba5tsvzc03qgk/skin_20140626100232131481.png");
+
+function spawnHerobrine()
+{
+countdown=200;
+Herobrine = Level.spawnMob(a,b+1,c, 39, "mob/herobrine.png");
+Entity.setRenderType(Herobrine, 3);
+wX=Entity.getX(Herobrine);
+wY=Entity.getY(Herobrine);
+wZ=Entity.getZ(Herobrine);
+clientMessage("§5I have been locked in there for 8 millenium..");
+}
+function modTick()
+{
+if(y-Entity.getY(ball)>=0)
+{
+setVelY(ball,0.3);
+}
+else if(y-Entity.getY(ball)<=0)
+{
+setVelY(ball,-0.25);
+}
+if(x-Entity.getX(ball)>=0)
+{
+setVelX(ball,0.32);
+}
+else if(x-Entity.getX(ball)<=0)
+{
+setVelX(ball,-0.32);
+}
+if(z-Entity.getZ(ball)>=0)
+{
+setVelZ(ball,0.32);
+}
+else if(z-Entity.getZ(ball)<=0)
+{
+setVelZ(ball,-0.32);
+}
+if(countdown==-1)
+{
+if(getPlayerY()-Entity.getY(Herobrine)<=-10)
+{
+setVelY(Herobrine,-0.4);
+}
+if(getPlayerX()-Entity.getX(Herobrine)<=-10)
+{
+setVelX(Herobrine,-0.4);
+}
+else if(getPlayerX()-Entity.getX(Herobrine)>=10)
+{
+setVelX(Herobrine, 0.4);
+}
+if(getPlayerZ()-Entity.getZ(Herobrine)<=-10)
+{
+setVelZ(Herobrine,-0.4)
+}
+else if(getPlayerZ()-Entity.getZ(Herobrine)>=10)
+{
+setVelZ(Herobrine,0.4)
+}
+if(getTile(Entity.getX(Herobrine),Entity.getY(Herobrine)-height,Entity.getZ(Herobrine))==0)
+{
+if(recurrent2>=60)
+{
+setVelY(Herobrine,-0.1)
+}
+else
+{
+setVelY(Herobrine,0)
+}
+}
+else
+{
+setVelY(Herobrine, 0.4)
+}
+}
+if(fire>=1)
+{
+fire=fire-1;
+}
+if(fire==0)
+{
+fire=70;
+if(ball==-1)
+{
+ball=Level.spawnMob(Entity.getX(Herobrine),Entity.getY(Herobrine)+1,Entity.getZ(Herobrine),12, "mob/pig.png");
+x=Player.getX();
+y=Player.getY()-2;
+z=Player.getZ();
+count=42;
+Entity.setHealth(ball,100);
+Entity.setRenderType(ball, 8);
+}
+}
+if(count>=1)
+{
+count=count-1;
+}
+if(count==0)
+{
+count=-1;
+Level.explode(Entity.getX(ball),Entity.getY(ball),Entity.getZ(ball),3);
+Entity.remove(ball);
+ball=-1
+}
+if(countdown>=1)
+{
+countdown=countdown-1;
+setVelX(Herobrine,0);
+setVelY(Herobrine,0.01);
+setVelZ(Herobrine,0);
+Entity.setHealth(Herobrine,10);
+}
+if(countdown==0)
+{
+clientMessage("§0BUT NOW IM FREE!! MWAHAHAHA");
+countdown=-1;
+Entity.setHealth(Herobrine,200);
+Level.explode(Entity.getX(Herobrine),Entity.getY(Herobrine),Entity.getZ(Herobrine),6);
+Entity.remove(Herobrine);
+Herobrine = Level.spawnMob(wX, wY, wZ, 34, "mob/herobrine.png");
+Entity.setRenderType(Herobrine, 3);
+Entity.setHealth(Herobrine,200);
+fire=70;
+}
+if(getTile(Entity.getX(ball),Entity.getY(ball)-1,Entity.getZ(ball))==0)
+{
+}
+else
+{
+Level.explode(Entity.getX(ball),Entity.getY(ball),Entity.getZ(ball),3);
+Entity.remove(ball);
+ball=-1;
+count=-1;
+}
+if(recurrent>=1)
+{
+recurrent=recurrent-1;
+}
+if(recurrent==0)
+{
+recurrent=5;
+if(getTile(Player.getX(),Player.getY()-2,Player.getZ())==129)
+{
+setVelX(getPlayerEnt(),0);
+setVelZ(getPlayerEnt(),0);
+}
+}
+if(recurrent2>=1)
+{
+recurrent2=recurrent2-1;
+}
+if(recurrent2==0)
+{
+recurrent2=80;
+height=Math.floor((Math.random()*3)+1);
+height=height+1
+}
+}
+function useItem(x, y, z, itemId, blockId)
+{
+a=x;
+b=y;
+c=z;
+if(itemId==331&&getTile(x,y,z)==247)
+{
+addItemInventory(86,-1);
+Level.destroyBlock(x,y,z);
+spawnHerobrine()
+}
+if(itemId==331&&getTile(x,y,z)==247)
+{
+addItemInventory(86,-1);
+Level.destroyBlock(x,y,z);
+spawnHerobrine()
+}
+}
+function procCmd(cmd)
+{
+var c = cmd.split(" ");
+if(c[0] == "help")
+{
+clientMessage(ChatColor.DARK_RED + "==--Majestic Flying Herobrine--==")
+clientMessage(ChatColor.BLUE + "--Please use /start to get the items--")
+clientMessage(ChatColor.DARK_RED + "-Recipes will not be implemented-")
+clientMessage(ChatColor.BLUE + "Place the nether reactor and tap it with a redstone")
+}
+if(c[0] == "start")
+{
+Level.dropItem(Player.getX(), Player.getY(),Player.getZ(),1,331,1,0);
+Level.dropItem(Player.getX(), Player.getY(),Player.getZ(),1,247,1,0);
+clientMessage(ChatColor.YELLOW + "All items gained! Good luck!")
+}
+}
+function entityRemovedHook(entity)
+{
+if(entity==Herobrine)
+{
+Level.dropItem(Entity.getX(entity),Entity.getY(entity),Entity.getZ(entity),1,150,1,0);
+fire=-1;
+}
+}
