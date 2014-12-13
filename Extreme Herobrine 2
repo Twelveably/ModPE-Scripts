@@ -1,0 +1,358 @@
+ModPE.setItem(461, "spawn_egg", 0, "Spawn Herobrine");
+var Herobrine;
+var s = 250;
+var Spawned = false;
+Player.addItemCreativeInv(461,1,0);
+Block.defineBlock(250,"Hardest Block", [["netherrack", 0],["netherrack", 0],["netherrack", 0], ["netherrack", 0], ["netherrack", 0], ["netherrack", 0]]);
+Block.setDestroyTime(250,-1);
+ModPE.overrideTexture("images/herobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0")
+
+function newLevel() {
+clientMessage(ChatColor.GREEN + "Extreme Herobrine 2 by BagasMC");
+clientMessage("Tip : Type /start to get the spawner");
+clientMessage("News : Herobrine's AI is updated");
+clientMessage("Use Bow + Arrows to kill him");
+Spawned = false;
+}
+
+function procCmd(cmd) {
+	if (cmd == "start") {
+		Entity.setHealth(Herobrine,0);
+		Level.dropItem(Player.getX(),Player.getY(),Player.getZ(),5,461,1,0);
+	}
+	 
+}
+
+
+function useItem(x, y, z, itemId, blockId, side)
+{
+    if(itemId == 461)//
+    {
+        var Herobrine = Level.spawnMob(x,y+57,z+5,39,"herobrine.png"); 
+        Entity.setRenderType(Herobrine,3);
+        Entity.setPosition(Player.getEntity(), x, y+58, z);
+        Entity.setHealth(Herobrine, 150);
+        Spawned = true;
+        clientMessage("WHAT?! HAHA! a noob has challenged me."); 
+        clientMessage("If you think you can defeat me, then you are" + ChatColor.DARK_RED + " WRONG!");
+        Level.setSpawn(x,y+58,z)
+        
+setTile(x,y+55,z,246);
+setTile(x,y+55,z+1,s);
+setTile(x,y+55,z+2,s);
+setTile(x,y+55,z+3,s);
+setTile(x,y+55,z+4,s);
+setTile(x,y+55,z+5,s);
+setTile(x,y+55,z+6,s);
+setTile(x,y+55,z+7,89);
+setTile(x,y+55,z-1,s);
+setTile(x,y+55,z-2,s);
+setTile(x,y+55,z-3,s);
+setTile(x,y+55,z-4,s);
+setTile(x,y+55,z-5,s);
+setTile(x,y+55,z-6,s);
+setTile(x,y+55,z-7,89);
+//-1
+setTile(x-1,y+55,z,s);
+setTile(x-1,y+55,z+1,s);
+setTile(x-1,y+55,z+2,s);
+setTile(x-1,y+55,z+3,s);
+setTile(x-1,y+55,z+4,s);
+setTile(x-1,y+55,z+5,s);
+setTile(x-1,y+55,z+6,s);
+setTile(x-1,y+55,z+7,s);
+setTile(x-1,y+55,z-1,s);
+setTile(x-1,y+55,z-2,s);
+setTile(x-1,y+55,z-3,s);
+setTile(x-1,y+55,z-4,s);
+setTile(x-1,y+55,z-5,s);
+setTile(x-1,y+55,z-6,s);
+setTile(x-1,y+55,z-7,s);
+//-2
+setTile(x-2,y+55,z,s);
+setTile(x-2,y+55,z+1,s);
+setTile(x-2,y+55,z+2,s);
+setTile(x-2,y+55,z+3,s);
+setTile(x-2,y+55,z+4,s);
+setTile(x-2,y+55,z+5,s);
+setTile(x-2,y+55,z+6,s);
+setTile(x-2,y+55,z+7,s);
+setTile(x-2,y+55,z-1,s);
+setTile(x-2,y+55,z-2,s);
+setTile(x-2,y+55,z-3,s);
+setTile(x-2,y+55,z-4,s);
+setTile(x-2,y+55,z-5,s);
+setTile(x-2,y+55,z-6,s);
+setTile(x-2,y+55,z-7,s);
+//+1 und +2
+setTile(x+1,y+55,z,s);
+setTile(x+1,y+55,z+1,s);
+setTile(x+1,y+55,z+2,s);
+setTile(x+1,y+55,z+3,s);
+setTile(x+1,y+55,z+4,s);
+setTile(x+1,y+55,z+5,s);
+setTile(x+1,y+55,z+6,s);
+setTile(x+1,y+55,z+7,s);
+setTile(x+1,y+55,z-1,s);
+setTile(x+1,y+55,z-2,s);
+setTile(x+1,y+55,z-3,s);
+setTile(x+1,y+55,z-4,s);
+setTile(x+1,y+55,z-5,s);
+setTile(x+1,y+55,z-6,s);
+setTile(x+1,y+55,z-7,s);
+setTile(x+2,y+55,z,s);
+setTile(x+2,y+55,z+1,s);
+setTile(x+2,y+55,z+2,s);
+setTile(x+2,y+55,z+3,s);
+setTile(x+2,y+55,z+4,s);
+setTile(x+2,y+55,z+5,s);
+setTile(x+2,y+55,z+6,s);
+setTile(x+2,y+55,z+7,s);
+setTile(x+2,y+55,z-1,s);
+setTile(x+2,y+55,z-2,s);
+setTile(x+2,y+55,z-3,s);
+setTile(x+2,y+55,z-4,s);
+setTile(x+2,y+55,z-5,s);
+setTile(x+2,y+55,z-6,s);
+setTile(x+2,y+55,z-7,s);
+//-3 -4
+setTile(x-3,y+55,z,s);
+setTile(x-3,y+55,z+1,s);
+setTile(x-3,y+55,z+2,s);
+setTile(x-3,y+55,z+3,s);
+setTile(x-3,y+55,z+4,s);
+setTile(x-3,y+55,z+5,s);
+setTile(x-3,y+55,z+6,s);
+setTile(x-3,y+55,z-1,s);
+setTile(x-3,y+55,z-2,s);
+setTile(x-3,y+55,z-3,s);
+setTile(x-3,y+55,z-4,s);
+setTile(x-3,y+55,z-5,s);
+setTile(x-3,y+55,z-6,s);
+setTile(x-4,y+55,z,s);
+setTile(x-4,y+55,z+1,s);
+setTile(x-4,y+55,z+2,s);
+setTile(x-4,y+55,z+3,s);
+setTile(x-4,y+55,z+4,s);
+setTile(x-4,y+55,z+5,s);
+setTile(x-4,y+55,z+6,s);
+setTile(x-4,y+55,z-1,s);
+setTile(x-4,y+55,z-2,s);
+setTile(x-4,y+55,z-3,s);
+setTile(x-4,y+55,z-4,s);
+setTile(x-4,y+55,z-5,s);
+setTile(x-4,y+55,z-6,s);
+//+3 +4
+setTile(x+3,y+55,z,s);
+setTile(x+3,y+55,z+1,s);
+setTile(x+3,y+55,z+2,s);
+setTile(x+3,y+55,z+3,s);
+setTile(x+3,y+55,z+4,s);
+setTile(x+3,y+55,z+5,s);
+setTile(x+3,y+55,z+6,s);
+setTile(x+3,y+55,z-1,s);
+setTile(x+3,y+55,z-2,s);
+setTile(x+3,y+55,z-3,s);
+setTile(x+3,y+55,z-4,s);
+setTile(x+3,y+55,z-5,s);
+setTile(x+3,y+55,z-6,s);
+setTile(x+4,y+55,z,s);
+setTile(x+4,y+55,z+1,s);
+setTile(x+4,y+55,z+2,s);
+setTile(x+4,y+55,z+3,s);
+setTile(x+4,y+55,z+4,s);
+setTile(x+4,y+55,z+5,s);
+setTile(x+4,y+55,z+6,s);
+setTile(x+4,y+55,z-1,s);
+setTile(x+4,y+55,z-2,s);
+setTile(x+4,y+55,z-3,s);
+setTile(x+4,y+55,z-4,s);
+setTile(x+4,y+55,z-5,s);
+setTile(x+4,y+55,z-6,s);
+//-5
+setTile(x-5,y+55,z,s);
+setTile(x-5,y+55,z+1,s);
+setTile(x-5,y+55,z+2,s);
+setTile(x-5,y+55,z+3,s);
+setTile(x-5,y+55,z+4,s);
+setTile(x-5,y+55,z+5,89);
+setTile(x-5,y+55,z-1,s);
+setTile(x-5,y+55,z-2,s);
+setTile(x-5,y+55,z-3,s);
+setTile(x-5,y+55,z-4,s);
+setTile(x-5,y+55,z-5,89);
+//+5
+setTile(x+5,y+55,z,s);
+setTile(x+5,y+55,z+1,s);
+setTile(x+5,y+55,z+2,s);
+setTile(x+5,y+55,z+3,s);
+setTile(x+5,y+55,z+4,s);
+setTile(x+5,y+55,z+5,89);
+setTile(x+5,y+55,z-1,s);
+setTile(x+5,y+55,z-2,s);
+setTile(x+5,y+55,z-3,s);
+setTile(x+5,y+55,z-4,s);
+setTile(x+5,y+55,z-5,89);
+//-6
+setTile(x-6,y+55,z,s);
+setTile(x-6,y+55,z+1,s);
+setTile(x-6,y+55,z+2,s);
+setTile(x-6,y+55,z+3,s);
+setTile(x-6,y+55,z+4,s);
+setTile(x-6,y+55,z-1,s);
+setTile(x-6,y+55,z-2,s);
+setTile(x-6,y+55,z-3,s);
+setTile(x-6,y+55,z-4,s);
+//+6
+setTile(x+6,y+55,z,s);
+setTile(x+6,y+55,z+1,s);
+setTile(x+6,y+55,z+2,s);
+setTile(x+6,y+55,z+3,s);
+setTile(x+6,y+55,z+4,s);
+setTile(x+6,y+55,z-1,s);
+setTile(x+6,y+55,z-2,s);
+setTile(x+6,y+55,z-3,s);
+setTile(x+6,y+55,z-4,s);
+//-7
+setTile(x-7,y+55,z,89);
+setTile(x-7,y+55,z+1,s);
+setTile(x-7,y+55,z+2,s);
+setTile(x-7,y+55,z-1,s);
+setTile(x-7,y+55,z-2,s);
+//+7
+setTile(x+7,y+55,z,89);
+setTile(x+7,y+55,z+1,s);
+setTile(x+7,y+55,z+2,s);
+setTile(x+7,y+55,z-1,s);
+setTile(x+7,y+55,z-2,s);
+
+setTile(x+7,y+56,z,85);
+setTile(x+7,y+56,z+1,85);
+setTile(x+7,y+56,z+2,85);
+setTile(x+7,y+56,z-1,85);
+setTile(x+7,y+56,z-2,85);
+setTile(x-7,y+56,z,85);
+setTile(x-7,y+56,z+1,85);
+setTile(x-7,y+56,z+2,85);
+setTile(x-7,y+56,z-1,85);
+setTile(x-7,y+56,z-2,85);
+setTile(x+6,y+56,z+3,85);
+setTile(x-6,y+56,z+3,85);
+setTile(x+6,y+56,z-3,85);
+setTile(x-6,y+56,z-3,85);
+setTile(x+6,y+56,z+2,85);
+setTile(x-6,y+56,z+2,85);
+setTile(x+6,y+56,z-2,85);
+setTile(x-6,y+56,z-2,85);
+setTile(x+5,y+56,z-5,85);
+setTile(x+5,y+56,z+5,85);
+setTile(x-5,y+56,z-5,85);
+setTile(x-5,y+56,z+5,85);
+setTile(x+5,y+56,z-4,85);
+setTile(x+5,y+56,z+4,85);
+setTile(x-5,y+56,z-4,85);
+setTile(x-5,y+56,z+4,85);
+setTile(x+5,y+56,z-3,85);
+setTile(x+5,y+56,z+3,85);
+setTile(x-5,y+56,z-3,85);
+setTile(x-5,y+56,z+3,85);
+setTile(x+4,y+56,z-5,85);
+setTile(x+4,y+56,z-6,85);
+setTile(x+4,y+56,z+5,85);
+setTile(x+4,y+56,z+6,85);
+setTile(x-4,y+56,z-5,85);
+setTile(x-4,y+56,z-6,85);
+setTile(x-4,y+56,z+5,85);
+setTile(x-4,y+56,z+6,85);
+setTile(x+3,y+56,z-5,85);
+setTile(x+3,y+56,z-6,85);
+setTile(x+3,y+56,z+5,85);
+setTile(x+3,y+56,z+6,85);
+setTile(x-3,y+56,z-5,85);
+setTile(x-3,y+56,z-6,85);
+setTile(x-3,y+56,z+5,85);
+setTile(x-3,y+56,z+6,85);
+setTile(x+2,y+56,z-6,85);
+setTile(x+2,y+56,z-7,85);
+setTile(x+2,y+56,z+6,85);
+setTile(x+2,y+56,z+7,85);
+setTile(x-2,y+56,z-6,85);
+setTile(x-2,y+56,z-7,85);
+setTile(x-2,y+56,z+6,85);
+setTile(x-2,y+56,z+7,85);
+setTile(x+1,y+56,z-7,85);
+setTile(x+1,y+56,z+7,85);
+setTile(x-1,y+56,z-7,85);
+setTile(x-1,y+56,z+7,85);
+setTile(x,y+56,z-7,85);
+setTile(x,y+56,z+7,85);
+}
+
+    }
+
+
+var ticks = 25;
+
+function modTick()
+{
+if(Spawned == true)
+{
+ticks--;
+if(ticks == 25){
+Level.setTime(0)
+}
+if(ticks == 20){
+Level.setTime(5000)
+}
+if(ticks == 15){
+Level.setTime(10000)
+}
+if(ticks == 10){
+Level.setTime(12000)
+}
+if(ticks == 5){
+Level.setTime(17000)
+ticks = 25;
+}
+}
+}
+
+
+function deathHook(murderer, victim) {
+if (Entity.getMobSkin(victim)=="herobrine.png"){
+        clientMessage("NOOOOOOOOOOOO!!!");
+        Spawned = false;
+        Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+Level.addParticle(ParticleType.lava, Entity.getX(victim)-0.2 , Entity.getY(victim)+1, Entity.getZ(victim), 0, 0, 0, 2);
+        
+        
+    }
+}
+
+function attackHook(murderer, victim) {
+if (Entity.getMobSkin(victim)=="herobrine.png"){
+preventDefault();
+}
+}
