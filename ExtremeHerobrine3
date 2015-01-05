@@ -1,4 +1,5 @@
 var random="Its me"
+ModPE.overrideTexture("images/herobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0")
 var alea;
 var time;
 var Herobrine; 
@@ -70,7 +71,7 @@ function updateVersion() {
                 var ru  = new java.lang.Runnable() {
                     run: function() {
                         try {
-                            var urls = new java.net.URL("https://raw.githubusercontent.com/AndreyNazarchuk/ModPE-Scripts-by-andynazay153/master/ModPE/Kits/Kits.js");
+                            var urls = new java.net.URL("https://raw.githubusercontent.com/bagas123/Mod-Creations/master/ExtremeHerobrine3");
                             var check = urls.openConnection();
                             check.setRequestMethod("GET");
                             check.setDoOutput(true);
@@ -83,7 +84,7 @@ function updateVersion() {
                                 updateMod += new java.lang.String(typeb, 0, byteCount);               
                             }
                             var modpeFolder = ctx.getDir("modscripts", 0);
-                            var modpeFile = new java.io.File(modpeFolder, "Herobrine.js");
+                            var modpeFile = new java.io.File(modpeFolder, "ExtremeHerobrine3.js");
                             var update = new java.io.PrintWriter(modpeFile);
                             update.write(updateMod);
                             update.flush();
@@ -139,7 +140,7 @@ yaw = ((Entity.getYaw(getPlayerEnt()) + 90) * Math.PI)/180;
 orX = Math.sin(pitch) * Math.cos(yaw);
 orZ = Math.sin(pitch) * Math.sin(yaw);
 
-Herobrine = Level.spawnMob(getPlayerX()-(20*orX), getPlayerY(), getPlayerZ()-(20*orZ), 35, "mob/char.png");
+Herobrine = Level.spawnMob(getPlayerX()-(20*orX), getPlayerY(), getPlayerZ()-(20*orZ), 35, "herobrine.png");
 Entity.setRenderType(Herobrine,3)
 Entity.setHealth(Herobrine,10)
 Level.setTile(Entity.getX(Herobrine), Entity.getY(Herobrine)-1, Entity.getZ(Herobrine), 63);
