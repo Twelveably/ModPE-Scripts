@@ -1,0 +1,169 @@
+var random="Its me"
+var alea;
+var time;
+var Herobrine; 
+var spawned=0;
+var pitch;
+var yaw;
+var orX;
+var orY;
+
+var version="Alpha 1.0";
+var checkForUpdate=false;
+var updateWindow=false; 
+var newUpdate;
+var updateMod;
+var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
+
+function checkVersion() {
+    var r  = new java.lang.Runnable() {
+        run: function() {
+            try {
+                var urls= new java.net.URL("https://raw.githubusercontent.com/bagas123/Mod-Creations/master/Extreme%20Herobrine%203%20Version");
+                var check = urls.openConnection();
+                check.setRequestMethod("GET");
+                check.setDoOutput(true);
+                check.connect();
+                check.getContentLength();
+                var script = check.getInputStream();
+                var typeb = java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, 1024);
+                var byteCount = 0; 
+                var checkedVersion;
+                while((byteCount = script.read(typeb)) != -1) { 
+                    checkedVersion = new java.lang.String(typeb, 0, byteCount);               
+                }
+                newUpdate = checkedVersion;
+                if(version+"\n" != checkedVersion) {
+                    clientMessage("New version " + newUpdate);
+                    updateWindow=true;
+                }
+                else if(version+"\n"==checkedVersion){
+                clientMessage("Sorry, no updates availaible yet..");
+                }
+            }
+            catch(err) {
+                clientMessage("Er.. Update check failed :( ");
+                if(err=="JavaException: java.net.UnknownHostException: raw.githubusercontent.com") {
+                                clientMessage("Looks like you have no internet connection.");
+                            }
+                            else {
+                                clientMessage("Error!: \n"+ err);
+                            } 
+            }
+        }
+    }
+    var threadt = new java.lang.Thread(r);
+    threadt.start();
+}
+function updateVersion() {
+    try {
+        var upd = new android.app.AlertDialog.Builder(ctx);        
+        upd.setTitle("We have a new version!");
+        upd.setMessage("Looks like BagasMC updated this mod!\nWanna update it now?\nCurrent version: " + version + "\nNew version: " + newUpdate);
+        upd.setNegativeButton("Uhh.. no", new android.content.DialogInterface.OnClickListener() {
+            onClick: function(par1) {
+            dialog.dismiss(); 
+   }
+        });
+        upd.setPositiveButton("Ok! Update!", new android.content.DialogInterface.OnClickListener() {
+            onClick: function(par1) {
+                var ru  = new java.lang.Runnable() {
+                    run: function() {
+                        try {
+                            var urls = new java.net.URL("https://raw.githubusercontent.com/AndreyNazarchuk/ModPE-Scripts-by-andynazay153/master/ModPE/Kits/Kits.js");
+                            var check = urls.openConnection();
+                            check.setRequestMethod("GET");
+                            check.setDoOutput(true);
+                            check.connect();
+                            check.getContentLength();
+                            var script = check.getInputStream();
+                            var typeb = java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, 1024);
+                            var byteCount = 0;
+                            while((byteCount = script.read(typeb)) != -1) { 
+                                updateMod += new java.lang.String(typeb, 0, byteCount);               
+                            }
+                            var modpeFolder = ctx.getDir("modscripts", 0);
+                            var modpeFile = new java.io.File(modpeFolder, "Herobrine.js");
+                            var update = new java.io.PrintWriter(modpeFile);
+                            update.write(updateMod);
+                            update.flush();
+                            update.close();
+                             
+                            try {
+                                net.zhuoweizhang.mcpelauncher.ScriptManager.setEnabled(modpeFile, false);
+                                net.zhuoweizhang.mcpelauncher.ScriptManager.setEnabled(modpeFile, true);
+                                clientMessage("We downloaded it and enabled it.");
+                                   
+                            }
+                            catch(err) {
+                                clientMessage("Error: \n" + err);
+                            }
+                        }
+                        catch(err) {
+                            clientMessage("Error: \n" + err);
+                        }
+                    }
+                }
+                var threadt = new java.lang.Thread(ru);
+                threadt.start();
+            }
+        });
+        var dialog = upd.create();
+        dialog.show() 
+    }
+    catch(err) {
+        clientMessage("Error: \n" + err);
+    }
+}
+
+
+
+function modTick()
+{
+alea=Math.floor((Math.random()*1000)+1);
+
+time = Level.getTime()-Math.floor(Level.getTime()/19200)*19200; //#
+if(time<(19200/2)) //#
+{ //#
+} //#
+
+else
+{
+
+if(spawned==0&&alea==1)
+
+{
+
+pitch = ((Entity.getPitch(getPlayerEnt()) + 90) * Math.PI)/180;
+yaw = ((Entity.getYaw(getPlayerEnt()) + 90) * Math.PI)/180;
+orX = Math.sin(pitch) * Math.cos(yaw);
+orZ = Math.sin(pitch) * Math.sin(yaw);
+
+Herobrine = Level.spawnMob(getPlayerX()-(20*orX), getPlayerY(), getPlayerZ()-(20*orZ), 35, "mob/char.png");
+Entity.setRenderType(Herobrine,3)
+Entity.setHealth(Herobrine,10)
+Level.setTile(Entity.getX(Herobrine), Entity.getY(Herobrine)-1, Entity.getZ(Herobrine), 63);
+Level.setSignText(Entity.getX(Herobrine), Entity.getY(Herobrine)-1, Entity.getZ(Herobrine), 1, random);
+
+
+spawned=1; 
+
+}
+}
+}
+
+
+
+
+function attackHook(a,e)
+{
+if(e==Herobrine)
+{
+Entity.remove(Herobrine)
+clientMessage("Mwahahaha")
+spawned=0;
+}
+if(e==getPlayerEnt())
+Level.addParticle(ParticleType.flame, Entity.getX(a) , Entity.getY(a)+1, Entity.getZ(a), 0, 0, 0, 20);
+}
+
