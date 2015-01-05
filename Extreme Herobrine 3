@@ -8,7 +8,7 @@ var yaw;
 var orX;
 var orY;
 
-var version="Alpha 1.0";
+var version="Alpha 2.0";
 var checkForUpdate=false;
 var updateWindow=false; 
 var newUpdate;
