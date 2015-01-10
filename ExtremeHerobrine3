@@ -1,4 +1,9 @@
-var random="Its me"
+//*COPYRIGHT - YOU NEED TO READ IT IF YOU ARE OPENING THIS FILE - COPYRIGHT*//
+//IM NOT ALLOWING ANYONE TO COPY,EDIT OR POSTING AND CLAIMING THIS IS YOUR MOD,DOING SO WILL RESULT IN A BAN, IF YOU SEE THIS MESSAGE, THEN YOU ARE GOING TO COPY AND EDIT IT RIGHT? GET OUT! I HATE STEALER, SO DO NOT COPY OR EDIT! >:(//
+
+
+
+var random="ITS ME"
 ModPE.overrideTexture("images/herobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0")
 var alea;
 var time;
@@ -9,7 +14,8 @@ var yaw;
 var orX;
 var orY;
 
-var version="Alpha 2.0";
+
+var version="Alpha 3.0";
 var checkForUpdate=false;
 var updateWindow=false; 
 var newUpdate;
@@ -60,7 +66,7 @@ function updateVersion() {
     try {
         var upd = new android.app.AlertDialog.Builder(ctx);        
         upd.setTitle("We have a new version!");
-        upd.setMessage("Looks like BagasMC updated this mod!\nWanna update it now?\nCurrent version: " + version + "\nNew version: " + newUpdate);
+        upd.setMessage("We have a new update\nWanna update it now?\nChangelogs:\n-You cannot place beds anymore. \n-Bugfixes \nCurrent version: " + version + "\nNew version: " + newUpdate);
         upd.setNegativeButton("Uhh.. no", new android.content.DialogInterface.OnClickListener() {
             onClick: function(par1) {
             dialog.dismiss(); 
@@ -117,16 +123,25 @@ function updateVersion() {
     }
 }
 
+function useItem(x,y,z,itemId,block,side)
+{
+if(itemId==355)
+{
+clientMessage("<Herobrine> You cannot sleep now.. MWAHAHAHA")
+explode(x,y,z,2)
+setTile(x,y,z,0)
+}
+}
 
 
 function modTick()
 {
 alea=Math.floor((Math.random()*1000)+1);
 
-time = Level.getTime()-Math.floor(Level.getTime()/19200)*19200; //#
-if(time<(19200/2)) //#
-{ //#
-} //#
+time = Level.getTime()-Math.floor(Level.getTime()/19200)*19200; 
+if(time<(19200/2)) 
+{ 
+} 
 
 else
 {
@@ -161,10 +176,11 @@ function attackHook(a,e)
 if(e==Herobrine)
 {
 Entity.remove(Herobrine)
-clientMessage("Mwahahaha")
+clientMessage("Arrghh!!")
 spawned=0;
 }
 if(e==getPlayerEnt())
 Level.addParticle(ParticleType.flame, Entity.getX(a) , Entity.getY(a)+1, Entity.getZ(a), 0, 0, 0, 20);
 }
+
 
