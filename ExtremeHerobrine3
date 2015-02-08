@@ -1,3 +1,392 @@
 
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('m T=0;1T.1Q(26,"1W","23",1,U,0);E.1h(1G,"2L",0,"2G 1S");E.1h(1B,"1C",0,"1W");E.1h(1j,"2m",0,2l.2i+"3w G");1T.1Q(2W,"3d 1S","23",1,U,0);2O.3h(1j,1,0,["1A","2h","1A"],["b",31,0,"r",2A,0]);m 1v=2B.2C.2D.2z();m 1x=I w.W.Q(1v.2y(),"2u/");m 1u=I w.W.Q(1x,"X.2v/2w");m Q=I w.W.Q(1u,"2E.2F");m T=1E;1N="2M";1F=1J(1N);C 1J(1K){m 1I=I w.W.2P(I w.W.2K(Q));m 1c,15;m 1b=I 2H();2I((1c=1I.2s())!=2Q){1b.2r(1c)}i=1b.2d().2a(",",":");15=i.29(":");1m 15[15.28(1K)+1]}m 2e=U;m Z="2g 2n"E.1r("1k/1i.v","16://N.1l.X/s/1n/O.v?N=0")E.1r("1k/O.v","16://N.1l.X/s/1n/O.v?N=0")E.1r("1k/1H.v","16://N.1l.X/s/1n/O.v?N=0")m 18;m 1d;m t;m 1z=0;m D;m H;m 1o;m 2k;C 2J(){A("2R 3r 3s G 3")A("3t : "+1D+"")A("3u, "+1F+"!")T=1E}m 1D="3l.1";C 3m(x,y,z,Y,3n,3o){u(Y==1B){A("<G> 3C 1M 3E 1R 1C? 3F")}u(Y==1G){A("<G> 3H 3D 3y 3x")}u(Y==1j){m 1a=h.B(x,y+3B,z+5,35,"1H.v");d.1e(1a,3);d.3k(L.2Z(),x,y+1L,z);d.1f(1a,32);A("33 2Y 1M 2T 2S? 2U!");h.2V(x,y+1L,z)T=U;8(x,y+9,z,37);8(x,y+9,z+1,c);8(x,y+9,z+2,c);8(x,y+9,z+3,c);8(x,y+9,z+4,c);8(x,y+9,z+5,c);8(x,y+9,z+6,c);8(x,y+9,z+7,F);8(x,y+9,z-1,c);8(x,y+9,z-2,c);8(x,y+9,z-3,c);8(x,y+9,z-4,c);8(x,y+9,z-5,c);8(x,y+9,z-6,c);8(x,y+9,z-7,F);8(x-1,y+9,z,c);8(x-1,y+9,z+1,c);8(x-1,y+9,z+2,c);8(x-1,y+9,z+3,c);8(x-1,y+9,z+4,c);8(x-1,y+9,z+5,c);8(x-1,y+9,z+6,c);8(x-1,y+9,z+7,c);8(x-1,y+9,z-1,c);8(x-1,y+9,z-2,c);8(x-1,y+9,z-3,c);8(x-1,y+9,z-4,c);8(x-1,y+9,z-5,c);8(x-1,y+9,z-6,c);8(x-1,y+9,z-7,c);8(x-2,y+9,z,c);8(x-2,y+9,z+1,c);8(x-2,y+9,z+2,c);8(x-2,y+9,z+3,c);8(x-2,y+9,z+4,c);8(x-2,y+9,z+5,c);8(x-2,y+9,z+6,c);8(x-2,y+9,z+7,c);8(x-2,y+9,z-1,c);8(x-2,y+9,z-2,c);8(x-2,y+9,z-3,c);8(x-2,y+9,z-4,c);8(x-2,y+9,z-5,c);8(x-2,y+9,z-6,c);8(x-2,y+9,z-7,c);8(x+1,y+9,z,c);8(x+1,y+9,z+1,c);8(x+1,y+9,z+2,c);8(x+1,y+9,z+3,c);8(x+1,y+9,z+4,c);8(x+1,y+9,z+5,c);8(x+1,y+9,z+6,c);8(x+1,y+9,z+7,c);8(x+1,y+9,z-1,c);8(x+1,y+9,z-2,c);8(x+1,y+9,z-3,c);8(x+1,y+9,z-4,c);8(x+1,y+9,z-5,c);8(x+1,y+9,z-6,c);8(x+1,y+9,z-7,c);8(x+2,y+9,z,c);8(x+2,y+9,z+1,c);8(x+2,y+9,z+2,c);8(x+2,y+9,z+3,c);8(x+2,y+9,z+4,c);8(x+2,y+9,z+5,c);8(x+2,y+9,z+6,c);8(x+2,y+9,z+7,c);8(x+2,y+9,z-1,c);8(x+2,y+9,z-2,c);8(x+2,y+9,z-3,c);8(x+2,y+9,z-4,c);8(x+2,y+9,z-5,c);8(x+2,y+9,z-6,c);8(x+2,y+9,z-7,c);8(x-3,y+9,z,c);8(x-3,y+9,z+1,c);8(x-3,y+9,z+2,c);8(x-3,y+9,z+3,c);8(x-3,y+9,z+4,c);8(x-3,y+9,z+5,c);8(x-3,y+9,z+6,c);8(x-3,y+9,z-1,c);8(x-3,y+9,z-2,c);8(x-3,y+9,z-3,c);8(x-3,y+9,z-4,c);8(x-3,y+9,z-5,c);8(x-3,y+9,z-6,c);8(x-4,y+9,z,c);8(x-4,y+9,z+1,c);8(x-4,y+9,z+2,c);8(x-4,y+9,z+3,c);8(x-4,y+9,z+4,c);8(x-4,y+9,z+5,c);8(x-4,y+9,z+6,c);8(x-4,y+9,z-1,c);8(x-4,y+9,z-2,c);8(x-4,y+9,z-3,c);8(x-4,y+9,z-4,c);8(x-4,y+9,z-5,c);8(x-4,y+9,z-6,c);8(x+3,y+9,z,c);8(x+3,y+9,z+1,c);8(x+3,y+9,z+2,c);8(x+3,y+9,z+3,c);8(x+3,y+9,z+4,c);8(x+3,y+9,z+5,c);8(x+3,y+9,z+6,c);8(x+3,y+9,z-1,c);8(x+3,y+9,z-2,c);8(x+3,y+9,z-3,c);8(x+3,y+9,z-4,c);8(x+3,y+9,z-5,c);8(x+3,y+9,z-6,c);8(x+4,y+9,z,c);8(x+4,y+9,z+1,c);8(x+4,y+9,z+2,c);8(x+4,y+9,z+3,c);8(x+4,y+9,z+4,c);8(x+4,y+9,z+5,c);8(x+4,y+9,z+6,c);8(x+4,y+9,z-1,c);8(x+4,y+9,z-2,c);8(x+4,y+9,z-3,c);8(x+4,y+9,z-4,c);8(x+4,y+9,z-5,c);8(x+4,y+9,z-6,c);8(x-5,y+9,z,c);8(x-5,y+9,z+1,c);8(x-5,y+9,z+2,c);8(x-5,y+9,z+3,c);8(x-5,y+9,z+4,c);8(x-5,y+9,z+5,F);8(x-5,y+9,z-1,c);8(x-5,y+9,z-2,c);8(x-5,y+9,z-3,c);8(x-5,y+9,z-4,c);8(x-5,y+9,z-5,F);8(x+5,y+9,z,c);8(x+5,y+9,z+1,c);8(x+5,y+9,z+2,c);8(x+5,y+9,z+3,c);8(x+5,y+9,z+4,c);8(x+5,y+9,z+5,F);8(x+5,y+9,z-1,c);8(x+5,y+9,z-2,c);8(x+5,y+9,z-3,c);8(x+5,y+9,z-4,c);8(x+5,y+9,z-5,F);8(x-6,y+9,z,c);8(x-6,y+9,z+1,c);8(x-6,y+9,z+2,c);8(x-6,y+9,z+3,c);8(x-6,y+9,z+4,c);8(x-6,y+9,z-1,c);8(x-6,y+9,z-2,c);8(x-6,y+9,z-3,c);8(x-6,y+9,z-4,c);8(x+6,y+9,z,c);8(x+6,y+9,z+1,c);8(x+6,y+9,z+2,c);8(x+6,y+9,z+3,c);8(x+6,y+9,z+4,c);8(x+6,y+9,z-1,c);8(x+6,y+9,z-2,c);8(x+6,y+9,z-3,c);8(x+6,y+9,z-4,c);8(x-7,y+9,z,F);8(x-7,y+9,z+1,c);8(x-7,y+9,z+2,c);8(x-7,y+9,z-1,c);8(x-7,y+9,z-2,c);8(x+7,y+9,z,F);8(x+7,y+9,z+1,c);8(x+7,y+9,z+2,c);8(x+7,y+9,z-1,c);8(x+7,y+9,z-2,c);8(x+7,y+f,z,g);8(x+7,y+f,z+1,g);8(x+7,y+f,z+2,g);8(x+7,y+f,z-1,g);8(x+7,y+f,z-2,g);8(x-7,y+f,z,g);8(x-7,y+f,z+1,g);8(x-7,y+f,z+2,g);8(x-7,y+f,z-1,g);8(x-7,y+f,z-2,g);8(x+6,y+f,z+3,g);8(x-6,y+f,z+3,g);8(x+6,y+f,z-3,g);8(x-6,y+f,z-3,g);8(x+6,y+f,z+2,g);8(x-6,y+f,z+2,g);8(x+6,y+f,z-2,g);8(x-6,y+f,z-2,g);8(x+5,y+f,z-5,g);8(x+5,y+f,z+5,g);8(x-5,y+f,z-5,g);8(x-5,y+f,z+5,g);8(x+5,y+f,z-4,g);8(x+5,y+f,z+4,g);8(x-5,y+f,z-4,g);8(x-5,y+f,z+4,g);8(x+5,y+f,z-3,g);8(x+5,y+f,z+3,g);8(x-5,y+f,z-3,g);8(x-5,y+f,z+3,g);8(x+4,y+f,z-5,g);8(x+4,y+f,z-6,g);8(x+4,y+f,z+5,g);8(x+4,y+f,z+6,g);8(x-4,y+f,z-5,g);8(x-4,y+f,z-6,g);8(x-4,y+f,z+5,g);8(x-4,y+f,z+6,g);8(x+3,y+f,z-5,g);8(x+3,y+f,z-6,g);8(x+3,y+f,z+5,g);8(x+3,y+f,z+6,g);8(x-3,y+f,z-5,g);8(x-3,y+f,z-6,g);8(x-3,y+f,z+5,g);8(x-3,y+f,z+6,g);8(x+2,y+f,z-6,g);8(x+2,y+f,z-7,g);8(x+2,y+f,z+6,g);8(x+2,y+f,z+7,g);8(x-2,y+f,z-6,g);8(x-2,y+f,z-7,g);8(x-2,y+f,z+6,g);8(x-2,y+f,z+7,g);8(x+1,y+f,z-7,g);8(x+1,y+f,z+7,g);8(x-1,y+f,z-7,g);8(x-1,y+f,z+7,g);8(x,y+f,z-7,g);8(x,y+f,z+7,g)}}m 10=1Z;C 39(){10--;18=q.1w((q.Z()*3a)+1);1d=h.1q()-q.1w(h.1q()/1g)*1g;u(1d<(1g/2)){}22{u(18==1){D=((d.1Y(19())+1s)*q.1t)/1O;H=((d.1U(19())+1s)*q.1t)/1O;1o=q.P(D)*q.11(H);1y=q.P(D)*q.P(H);t=h.B(K()-(20*1o),M(),J()-(20*1y),35,"1i.v");d.1e(t,3)d.1f(t,20)h.8(d.j(t),d.l(t)-1,d.k(t),2j);h.2q(d.j(t),d.l(t)-1,d.k(t),1,Z);1z=1}}u(1X(t,12)){E.24(3q+(q.Z()*4))}22{E.24(3z)}u(h.1q()==3g){d.3b(19(),3c);A("<G> 3j")}u(10==0){10=1Z;t=h.B(K(),M(),J(),35,"O.v");d.1e(t,3)d.1f(t,20)A("<G> 3e 3i 1R 3f 38?")h.B(K(),M(),J(),34);h.B(K(),M(),J(),34);h.B(K(),M(),J(),34);h.B(K(),M(),J(),34);h.B(K(),M(),J(),34)}}m 2X=5;C 3v(1P,3A){u(1P==t){h.o(n.3G,d.j(a),d.l(a)+1,d.k(a),0,0,0,20)}}C 21(x,y,z){1p.x=x;1p.y=y;1p.z=z}C 3p(){m S=I 21(0,0,0);m H=1U();m D=1Y();S.y=-q.P(w.V.q.R(D));S.x=-q.P(w.V.q.R(H))*q.11(w.V.q.R(D))S.z=q.11(w.V.q.R(H))*q.11(w.V.q.R(D));1m S}C 1X(14,13){1m q.17(d.j(14)-L.j())<13&&q.17(d.l(14)-L.l())<13&&q.17(d.k(14)-L.k())<13}C 2p(2o,e){u(d.1V(e)=="1i.v"){A("<G> 27 25 2f 2c 2b!");h.B(d.j(e),d.l(e),d.k(e),36)h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2);h.o(n.p,d.j(e)-0.2,d.l(e)+1,d.k(e),0,0,0,2)}u(d.1V(e)=="O.v"){A("2N!! 2x!!!!!")h.2t(L.j(),L.l(),L.k(),30)T=U}}',62,230,'||||||||setTile|55|||87|Entity|victim|56|85|Level||getX|getZ|getY|var|ParticleType|addParticle|lava|Math|||EHerobrine3|if|png|java||||clientMessage|spawnMob|function|pitch|ModPE|89|Herobrine|yaw|new|getPlayerZ|getPlayerX|Player|getPlayerY|dl|herobrine|sin|File|toRadians|direction|start|false|lang|io|com|itemId|random|timez|cos||distance|ent|prop|https|abs|alea|getPlayerEnt|FHerobrine|line|str|time|setRenderType|setHealth|19200|setItem|3herobrine|397|images|dropboxusercontent|return|lbwlmb2wbju7b7e|orX|this|getTime|overrideTexture|90|PI|Dir2|Card|floor|Dir1|orZ|spawned|bbb|355|bed|version|true|PlayerN|324|sherobrine|Reader|getOptionAttr|attr|58|to|Name|180|attacker|defineBlock|your|nedooW|Block|getYaw|getMobSkin|deB|compareDistance|getPitch|15000||Vector3D|else|missing_tile|setFov|up||Rise|indexOf|split|replace|hell|from|join|countdown|pig|ITS|brb|RED|63|orY|ChatColor|skull_wither|ME|murderer|deathHook|setSignText|push|readLine|explode|games|mojang|minecraftpe|NOOOOO|getAbsolutePath|getExternalStorageDirectory|331|android|os|Environment|options|txt|rooD|Array|while|newLevel|FileReader|door_wood|mp_username|AAAAAAAHHH|Item|BufferedReader|null|Succesfully|me|challenge|HAHA|setSpawn|64|dmg|dare|getEntity||352|350|You||||246|now|modTick|1000|setFireTicks|50|rood|Where|god|5000|addShapedRecipe|is|MWAHAHAHAHAHAHA|setPosition|OR_EH36|useItem|block|side|lookDir|65|loaded|Extreme|Version|Welcome|attackHook|Summon|oN|srood|67|enemy|57|Trying|rof|place|MWAHAHAHA|flame|uoy'.split('|'),0,{}))
+var start = 0;
+Block.defineBlock(26, "deB", "missing_tile", 1, false, 0);
+ModPE.setItem(324, "door_wood", 0, "rooD nedooW");
+ModPE.setItem(355, "bed", 0, "deB");
+ModPE.setItem(397, "skull_wither", 0, ChatColor.RED + "Summon Herobrine");
+Block.defineBlock(64, "rood nedooW", "missing_tile", 1, false, 0);
+Item.addShapedRecipe(397, 1, 0, ["bbb", "brb", "bbb"], ["b", 352, 0, "r", 331, 0]);
+var Card = android.os.Environment.getExternalStorageDirectory();
+var Dir1 = new java.io.File(Card.getAbsolutePath(), "games/");
+var Dir2 = new java.io.File(Dir1, "com.mojang/minecraftpe");
+var File = new java.io.File(Dir2, "options.txt");
+var start = true;
+Name = "mp_username";
+PlayerN = getOptionAttr(Name);
 
+function getOptionAttr(attr) {
+    var Reader = new java.io.BufferedReader(new java.io.FileReader(File));
+    var str, prop;
+    var line = new Array();
+    while ((str = Reader.readLine()) != null) {
+        line.push(str)
+    }
+    i = line.join().replace(",", ":");
+    prop = i.split(":");
+    return prop[prop.indexOf(attr) + 1]
+}
+var countdown = false;
+var random = "ITS ME"
+ModPE.overrideTexture("images/3herobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0") ModPE.overrideTexture("images/herobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0") ModPE.overrideTexture("images/sherobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0") var alea;
+var time;
+var EHerobrine3;
+var spawned = 0;
+var pitch;
+var yaw;
+var orX;
+var orY;
+
+function newLevel() {
+    clientMessage("Succesfully loaded Extreme Herobrine 3") clientMessage("Version : " + version + "") clientMessage("Welcome, " + PlayerN + "!") start = true
+}
+var version = "OR_EH36.1";
+
+function useItem(x, y, z, itemId, block, side) {
+    if (itemId == 355) {
+        clientMessage("<Herobrine> Trying to place your bed? MWAHAHAHA")
+    }
+    if (itemId == 324) {
+        clientMessage("<Herobrine> uoy rof srood oN")
+    }
+    if (itemId == 397) {
+        var FHerobrine = Level.spawnMob(x, y + 57, z + 5, 35, "sherobrine.png");
+        Entity.setRenderType(FHerobrine, 3);
+        Entity.setPosition(Player.getEntity(), x, y + 58, z);
+        Entity.setHealth(FHerobrine, 350);
+        clientMessage("You dare to challenge me? HAHA!");
+        Level.setSpawn(x, y + 58, z) start = false;
+        setTile(x, y + 55, z, 246);
+        setTile(x, y + 55, z + 1, 87);
+        setTile(x, y + 55, z + 2, 87);
+        setTile(x, y + 55, z + 3, 87);
+        setTile(x, y + 55, z + 4, 87);
+        setTile(x, y + 55, z + 5, 87);
+        setTile(x, y + 55, z + 6, 87);
+        setTile(x, y + 55, z + 7, 89);
+        setTile(x, y + 55, z - 1, 87);
+        setTile(x, y + 55, z - 2, 87);
+        setTile(x, y + 55, z - 3, 87);
+        setTile(x, y + 55, z - 4, 87);
+        setTile(x, y + 55, z - 5, 87);
+        setTile(x, y + 55, z - 6, 87);
+        setTile(x, y + 55, z - 7, 89);
+        setTile(x - 1, y + 55, z, 87);
+        setTile(x - 1, y + 55, z + 1, 87);
+        setTile(x - 1, y + 55, z + 2, 87);
+        setTile(x - 1, y + 55, z + 3, 87);
+        setTile(x - 1, y + 55, z + 4, 87);
+        setTile(x - 1, y + 55, z + 5, 87);
+        setTile(x - 1, y + 55, z + 6, 87);
+        setTile(x - 1, y + 55, z + 7, 87);
+        setTile(x - 1, y + 55, z - 1, 87);
+        setTile(x - 1, y + 55, z - 2, 87);
+        setTile(x - 1, y + 55, z - 3, 87);
+        setTile(x - 1, y + 55, z - 4, 87);
+        setTile(x - 1, y + 55, z - 5, 87);
+        setTile(x - 1, y + 55, z - 6, 87);
+        setTile(x - 1, y + 55, z - 7, 87);
+        setTile(x - 2, y + 55, z, 87);
+        setTile(x - 2, y + 55, z + 1, 87);
+        setTile(x - 2, y + 55, z + 2, 87);
+        setTile(x - 2, y + 55, z + 3, 87);
+        setTile(x - 2, y + 55, z + 4, 87);
+        setTile(x - 2, y + 55, z + 5, 87);
+        setTile(x - 2, y + 55, z + 6, 87);
+        setTile(x - 2, y + 55, z + 7, 87);
+        setTile(x - 2, y + 55, z - 1, 87);
+        setTile(x - 2, y + 55, z - 2, 87);
+        setTile(x - 2, y + 55, z - 3, 87);
+        setTile(x - 2, y + 55, z - 4, 87);
+        setTile(x - 2, y + 55, z - 5, 87);
+        setTile(x - 2, y + 55, z - 6, 87);
+        setTile(x - 2, y + 55, z - 7, 87);
+        setTile(x + 1, y + 55, z, 87);
+        setTile(x + 1, y + 55, z + 1, 87);
+        setTile(x + 1, y + 55, z + 2, 87);
+        setTile(x + 1, y + 55, z + 3, 87);
+        setTile(x + 1, y + 55, z + 4, 87);
+        setTile(x + 1, y + 55, z + 5, 87);
+        setTile(x + 1, y + 55, z + 6, 87);
+        setTile(x + 1, y + 55, z + 7, 87);
+        setTile(x + 1, y + 55, z - 1, 87);
+        setTile(x + 1, y + 55, z - 2, 87);
+        setTile(x + 1, y + 55, z - 3, 87);
+        setTile(x + 1, y + 55, z - 4, 87);
+        setTile(x + 1, y + 55, z - 5, 87);
+        setTile(x + 1, y + 55, z - 6, 87);
+        setTile(x + 1, y + 55, z - 7, 87);
+        setTile(x + 2, y + 55, z, 87);
+        setTile(x + 2, y + 55, z + 1, 87);
+        setTile(x + 2, y + 55, z + 2, 87);
+        setTile(x + 2, y + 55, z + 3, 87);
+        setTile(x + 2, y + 55, z + 4, 87);
+        setTile(x + 2, y + 55, z + 5, 87);
+        setTile(x + 2, y + 55, z + 6, 87);
+        setTile(x + 2, y + 55, z + 7, 87);
+        setTile(x + 2, y + 55, z - 1, 87);
+        setTile(x + 2, y + 55, z - 2, 87);
+        setTile(x + 2, y + 55, z - 3, 87);
+        setTile(x + 2, y + 55, z - 4, 87);
+        setTile(x + 2, y + 55, z - 5, 87);
+        setTile(x + 2, y + 55, z - 6, 87);
+        setTile(x + 2, y + 55, z - 7, 87);
+        setTile(x - 3, y + 55, z, 87);
+        setTile(x - 3, y + 55, z + 1, 87);
+        setTile(x - 3, y + 55, z + 2, 87);
+        setTile(x - 3, y + 55, z + 3, 87);
+        setTile(x - 3, y + 55, z + 4, 87);
+        setTile(x - 3, y + 55, z + 5, 87);
+        setTile(x - 3, y + 55, z + 6, 87);
+        setTile(x - 3, y + 55, z - 1, 87);
+        setTile(x - 3, y + 55, z - 2, 87);
+        setTile(x - 3, y + 55, z - 3, 87);
+        setTile(x - 3, y + 55, z - 4, 87);
+        setTile(x - 3, y + 55, z - 5, 87);
+        setTile(x - 3, y + 55, z - 6, 87);
+        setTile(x - 4, y + 55, z, 87);
+        setTile(x - 4, y + 55, z + 1, 87);
+        setTile(x - 4, y + 55, z + 2, 87);
+        setTile(x - 4, y + 55, z + 3, 87);
+        setTile(x - 4, y + 55, z + 4, 87);
+        setTile(x - 4, y + 55, z + 5, 87);
+        setTile(x - 4, y + 55, z + 6, 87);
+        setTile(x - 4, y + 55, z - 1, 87);
+        setTile(x - 4, y + 55, z - 2, 87);
+        setTile(x - 4, y + 55, z - 3, 87);
+        setTile(x - 4, y + 55, z - 4, 87);
+        setTile(x - 4, y + 55, z - 5, 87);
+        setTile(x - 4, y + 55, z - 6, 87);
+        setTile(x + 3, y + 55, z, 87);
+        setTile(x + 3, y + 55, z + 1, 87);
+        setTile(x + 3, y + 55, z + 2, 87);
+        setTile(x + 3, y + 55, z + 3, 87);
+        setTile(x + 3, y + 55, z + 4, 87);
+        setTile(x + 3, y + 55, z + 5, 87);
+        setTile(x + 3, y + 55, z + 6, 87);
+        setTile(x + 3, y + 55, z - 1, 87);
+        setTile(x + 3, y + 55, z - 2, 87);
+        setTile(x + 3, y + 55, z - 3, 87);
+        setTile(x + 3, y + 55, z - 4, 87);
+        setTile(x + 3, y + 55, z - 5, 87);
+        setTile(x + 3, y + 55, z - 6, 87);
+        setTile(x + 4, y + 55, z, 87);
+        setTile(x + 4, y + 55, z + 1, 87);
+        setTile(x + 4, y + 55, z + 2, 87);
+        setTile(x + 4, y + 55, z + 3, 87);
+        setTile(x + 4, y + 55, z + 4, 87);
+        setTile(x + 4, y + 55, z + 5, 87);
+        setTile(x + 4, y + 55, z + 6, 87);
+        setTile(x + 4, y + 55, z - 1, 87);
+        setTile(x + 4, y + 55, z - 2, 87);
+        setTile(x + 4, y + 55, z - 3, 87);
+        setTile(x + 4, y + 55, z - 4, 87);
+        setTile(x + 4, y + 55, z - 5, 87);
+        setTile(x + 4, y + 55, z - 6, 87);
+        setTile(x - 5, y + 55, z, 87);
+        setTile(x - 5, y + 55, z + 1, 87);
+        setTile(x - 5, y + 55, z + 2, 87);
+        setTile(x - 5, y + 55, z + 3, 87);
+        setTile(x - 5, y + 55, z + 4, 87);
+        setTile(x - 5, y + 55, z + 5, 89);
+        setTile(x - 5, y + 55, z - 1, 87);
+        setTile(x - 5, y + 55, z - 2, 87);
+        setTile(x - 5, y + 55, z - 3, 87);
+        setTile(x - 5, y + 55, z - 4, 87);
+        setTile(x - 5, y + 55, z - 5, 89);
+        setTile(x + 5, y + 55, z, 87);
+        setTile(x + 5, y + 55, z + 1, 87);
+        setTile(x + 5, y + 55, z + 2, 87);
+        setTile(x + 5, y + 55, z + 3, 87);
+        setTile(x + 5, y + 55, z + 4, 87);
+        setTile(x + 5, y + 55, z + 5, 89);
+        setTile(x + 5, y + 55, z - 1, 87);
+        setTile(x + 5, y + 55, z - 2, 87);
+        setTile(x + 5, y + 55, z - 3, 87);
+        setTile(x + 5, y + 55, z - 4, 87);
+        setTile(x + 5, y + 55, z - 5, 89);
+        setTile(x - 6, y + 55, z, 87);
+        setTile(x - 6, y + 55, z + 1, 87);
+        setTile(x - 6, y + 55, z + 2, 87);
+        setTile(x - 6, y + 55, z + 3, 87);
+        setTile(x - 6, y + 55, z + 4, 87);
+        setTile(x - 6, y + 55, z - 1, 87);
+        setTile(x - 6, y + 55, z - 2, 87);
+        setTile(x - 6, y + 55, z - 3, 87);
+        setTile(x - 6, y + 55, z - 4, 87);
+        setTile(x + 6, y + 55, z, 87);
+        setTile(x + 6, y + 55, z + 1, 87);
+        setTile(x + 6, y + 55, z + 2, 87);
+        setTile(x + 6, y + 55, z + 3, 87);
+        setTile(x + 6, y + 55, z + 4, 87);
+        setTile(x + 6, y + 55, z - 1, 87);
+        setTile(x + 6, y + 55, z - 2, 87);
+        setTile(x + 6, y + 55, z - 3, 87);
+        setTile(x + 6, y + 55, z - 4, 87);
+        setTile(x - 7, y + 55, z, 89);
+        setTile(x - 7, y + 55, z + 1, 87);
+        setTile(x - 7, y + 55, z + 2, 87);
+        setTile(x - 7, y + 55, z - 1, 87);
+        setTile(x - 7, y + 55, z - 2, 87);
+        setTile(x + 7, y + 55, z, 89);
+        setTile(x + 7, y + 55, z + 1, 87);
+        setTile(x + 7, y + 55, z + 2, 87);
+        setTile(x + 7, y + 55, z - 1, 87);
+        setTile(x + 7, y + 55, z - 2, 87);
+        setTile(x + 7, y + 56, z, 85);
+        setTile(x + 7, y + 56, z + 1, 85);
+        setTile(x + 7, y + 56, z + 2, 85);
+        setTile(x + 7, y + 56, z - 1, 85);
+        setTile(x + 7, y + 56, z - 2, 85);
+        setTile(x - 7, y + 56, z, 85);
+        setTile(x - 7, y + 56, z + 1, 85);
+        setTile(x - 7, y + 56, z + 2, 85);
+        setTile(x - 7, y + 56, z - 1, 85);
+        setTile(x - 7, y + 56, z - 2, 85);
+        setTile(x + 6, y + 56, z + 3, 85);
+        setTile(x - 6, y + 56, z + 3, 85);
+        setTile(x + 6, y + 56, z - 3, 85);
+        setTile(x - 6, y + 56, z - 3, 85);
+        setTile(x + 6, y + 56, z + 2, 85);
+        setTile(x - 6, y + 56, z + 2, 85);
+        setTile(x + 6, y + 56, z - 2, 85);
+        setTile(x - 6, y + 56, z - 2, 85);
+        setTile(x + 5, y + 56, z - 5, 85);
+        setTile(x + 5, y + 56, z + 5, 85);
+        setTile(x - 5, y + 56, z - 5, 85);
+        setTile(x - 5, y + 56, z + 5, 85);
+        setTile(x + 5, y + 56, z - 4, 85);
+        setTile(x + 5, y + 56, z + 4, 85);
+        setTile(x - 5, y + 56, z - 4, 85);
+        setTile(x - 5, y + 56, z + 4, 85);
+        setTile(x + 5, y + 56, z - 3, 85);
+        setTile(x + 5, y + 56, z + 3, 85);
+        setTile(x - 5, y + 56, z - 3, 85);
+        setTile(x - 5, y + 56, z + 3, 85);
+        setTile(x + 4, y + 56, z - 5, 85);
+        setTile(x + 4, y + 56, z - 6, 85);
+        setTile(x + 4, y + 56, z + 5, 85);
+        setTile(x + 4, y + 56, z + 6, 85);
+        setTile(x - 4, y + 56, z - 5, 85);
+        setTile(x - 4, y + 56, z - 6, 85);
+        setTile(x - 4, y + 56, z + 5, 85);
+        setTile(x - 4, y + 56, z + 6, 85);
+        setTile(x + 3, y + 56, z - 5, 85);
+        setTile(x + 3, y + 56, z - 6, 85);
+        setTile(x + 3, y + 56, z + 5, 85);
+        setTile(x + 3, y + 56, z + 6, 85);
+        setTile(x - 3, y + 56, z - 5, 85);
+        setTile(x - 3, y + 56, z - 6, 85);
+        setTile(x - 3, y + 56, z + 5, 85);
+        setTile(x - 3, y + 56, z + 6, 85);
+        setTile(x + 2, y + 56, z - 6, 85);
+        setTile(x + 2, y + 56, z - 7, 85);
+        setTile(x + 2, y + 56, z + 6, 85);
+        setTile(x + 2, y + 56, z + 7, 85);
+        setTile(x - 2, y + 56, z - 6, 85);
+        setTile(x - 2, y + 56, z - 7, 85);
+        setTile(x - 2, y + 56, z + 6, 85);
+        setTile(x - 2, y + 56, z + 7, 85);
+        setTile(x + 1, y + 56, z - 7, 85);
+        setTile(x + 1, y + 56, z + 7, 85);
+        setTile(x - 1, y + 56, z - 7, 85);
+        setTile(x - 1, y + 56, z + 7, 85);
+        setTile(x, y + 56, z - 7, 85);
+        setTile(x, y + 56, z + 7, 85)
+    }
+}
+var timez = 15000;
+
+function modTick() {
+    timez--;
+    alea = Math.floor((Math.random() * 1000) + 1);
+    time = Level.getTime() - Math.floor(Level.getTime() / 19200) * 19200;
+    if (time < (19200 / 2)) {} else {
+        if (alea == 1) {
+            pitch = ((Entity.getPitch(getPlayerEnt()) + 90) * Math.PI) / 180;
+            yaw = ((Entity.getYaw(getPlayerEnt()) + 90) * Math.PI) / 180;
+            orX = Math.sin(pitch) * Math.cos(yaw);
+            orZ = Math.sin(pitch) * Math.sin(yaw);
+            EHerobrine3 = Level.spawnMob(getPlayerX() - (20 * orX), getPlayerY(), getPlayerZ() - (20 * orZ), 35, "3herobrine.png");
+            Entity.setRenderType(EHerobrine3, 3) Entity.setHealth(EHerobrine3, 20) Level.setTile(Entity.getX(EHerobrine3), Entity.getY(EHerobrine3) - 1, Entity.getZ(EHerobrine3), 63);
+            Level.setSignText(Entity.getX(EHerobrine3), Entity.getY(EHerobrine3) - 1, Entity.getZ(EHerobrine3), 1, random);
+            spawned = 1
+        }
+    }
+    if (compareDistance(EHerobrine3, 12)) {
+        ModPE.setFov(65 + (Math.random() * 4))
+    } else {
+        ModPE.setFov(67)
+    }
+    if (Level.getTime() == 5000) {
+        Entity.setFireTicks(getPlayerEnt(), 50);
+        clientMessage("<Herobrine> MWAHAHAHAHAHAHA")
+    }
+    if (timez == 0) {
+        timez = 15000;
+        EHerobrine3 = Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 35, "herobrine.png");
+        Entity.setRenderType(EHerobrine3, 3) Entity.setHealth(EHerobrine3, 20) clientMessage("<Herobrine> Where is your god now?") Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34)
+    }
+}
+var dmg = 5;
+
+function attackHook(attacker, enemy) {
+    if (attacker == EHerobrine3) {
+        Level.addParticle(ParticleType.flame, Entity.getX(a), Entity.getY(a) + 1, Entity.getZ(a), 0, 0, 0, 20)
+    }
+}
+
+function Vector3D(x, y, z) {
+    this.x = x;
+    this.y = y;
+    this.z = z
+}
+
+function lookDir() {
+    var direction = new Vector3D(0, 0, 0);
+    var yaw = getYaw();
+    var pitch = getPitch();
+    direction.y = -Math.sin(java.lang.Math.toRadians(pitch));
+    direction.x = -Math.sin(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch)) direction.z = Math.cos(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch));
+    return direction
+}
+
+function compareDistance(ent, distance) {
+    return Math.abs(Entity.getX(ent) - Player.getX()) < distance && Math.abs(Entity.getY(ent) - Player.getY()) < distance && Math.abs(Entity.getZ(ent) - Player.getZ()) < distance
+}
+
+function deathHook(murderer, victim) {
+    if (Entity.getMobSkin(victim) == "3herobrine.png") {
+        clientMessage("<Herobrine> Rise up pig from hell!");
+        Level.spawnMob(Entity.getX(victim), Entity.getY(victim), Entity.getZ(victim), 36) Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2)
+    }
+    if (Entity.getMobSkin(victim) == "herobrine.png") {
+        clientMessage("AAAAAAAHHH!! NOOOOO!!!!!") Level.explode(Player.getX(), Player.getY(), Player.getZ(), 30) start = false
+    }
+}
