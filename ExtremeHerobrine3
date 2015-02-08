@@ -39,7 +39,10 @@ var orX;
 var orY;
 
 function newLevel() {
-    clientMessage("Succesfully loaded Extreme Herobrine 3") clientMessage("Version : " + version + "") clientMessage("Welcome, " + PlayerN + "!") start = true
+    clientMessage("Succesfully loaded Extreme Herobrine 3") 
+    clientMessage("Version : " + version + "") 
+    clientMessage("Welcome, " + PlayerN + "!") 
+    
 }
 var version = "OR_EH36.1";
 
@@ -56,7 +59,7 @@ function useItem(x, y, z, itemId, block, side) {
         Entity.setPosition(Player.getEntity(), x, y + 58, z);
         Entity.setHealth(FHerobrine, 350);
         clientMessage("You dare to challenge me? HAHA!");
-        Level.setSpawn(x, y + 58, z) start = false;
+        Level.setSpawn(x, y + 58, z) 
         setTile(x, y + 55, z, 246);
         setTile(x, y + 55, z + 1, 87);
         setTile(x, y + 55, z + 2, 87);
@@ -309,7 +312,9 @@ function modTick() {
             orX = Math.sin(pitch) * Math.cos(yaw);
             orZ = Math.sin(pitch) * Math.sin(yaw);
             EHerobrine3 = Level.spawnMob(getPlayerX() - (20 * orX), getPlayerY(), getPlayerZ() - (20 * orZ), 35, "3herobrine.png");
-            Entity.setRenderType(EHerobrine3, 3) Entity.setHealth(EHerobrine3, 20) Level.setTile(Entity.getX(EHerobrine3), Entity.getY(EHerobrine3) - 1, Entity.getZ(EHerobrine3), 63);
+            Entity.setRenderType(EHerobrine3, 3);
+            Entity.setHealth(EHerobrine3, 20); 
+            Level.setTile(Entity.getX(EHerobrine3), Entity.getY(EHerobrine3) - 1, Entity.getZ(EHerobrine3), 63);
             Level.setSignText(Entity.getX(EHerobrine3), Entity.getY(EHerobrine3) - 1, Entity.getZ(EHerobrine3), 1, random);
             spawned = 1
         }
@@ -326,7 +331,10 @@ function modTick() {
     if (timez == 0) {
         timez = 15000;
         EHerobrine3 = Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 35, "herobrine.png");
-        Entity.setRenderType(EHerobrine3, 3) Entity.setHealth(EHerobrine3, 20) clientMessage("<Herobrine> Where is your god now?") Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Entity.setRenderType(EHerobrine3, 3);
+        Entity.setHealth(EHerobrine3, 20);
+         clientMessage("<Herobrine> Where is your god now?") 
+         Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
         Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
         Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
         Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
@@ -352,7 +360,7 @@ function lookDir() {
     var yaw = getYaw();
     var pitch = getPitch();
     direction.y = -Math.sin(java.lang.Math.toRadians(pitch));
-    direction.x = -Math.sin(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch)) direction.z = Math.cos(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch));
+    direction.x = -Math.sin(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch));   direction.z = Math.cos(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch));
     return direction
 }
 
@@ -363,7 +371,7 @@ function compareDistance(ent, distance) {
 function deathHook(murderer, victim) {
     if (Entity.getMobSkin(victim) == "3herobrine.png") {
         clientMessage("<Herobrine> Rise up pig from hell!");
-        Level.spawnMob(Entity.getX(victim), Entity.getY(victim), Entity.getZ(victim), 36) Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.spawnMob(Entity.getX(victim), Entity.getY(victim), Entity.getZ(victim), 36); Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
         Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
         Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
         Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
@@ -389,7 +397,8 @@ function deathHook(murderer, victim) {
         Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2)
     }
     if (Entity.getMobSkin(victim) == "herobrine.png") {
-        clientMessage("AAAAAAAHHH!! NOOOOO!!!!!") Level.explode(Player.getX(), Player.getY(), Player.getZ(), 30) start = false
+        clientMessage("AAAAAAAHHH!! NOOOOO!!!!!");
+        Level.explode(Player.getX(), Player.getY(), Player.getZ(), 30);
+         start = false
     }
 }
-
