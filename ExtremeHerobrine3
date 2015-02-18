@@ -1,1 +1,451 @@
-var _0x8dfa=["\x64\x65\x42","\x6D\x69\x73\x73\x69\x6E\x67\x5F\x74\x69\x6C\x65","\x64\x65\x66\x69\x6E\x65\x42\x6C\x6F\x63\x6B","\x64\x6F\x6F\x72\x5F\x77\x6F\x6F\x64","\x72\x6F\x6F\x44\x20\x6E\x65\x64\x6F\x6F\x57","\x73\x65\x74\x49\x74\x65\x6D","\x62\x65\x64","\x73\x6B\x75\x6C\x6C\x5F\x77\x69\x74\x68\x65\x72","\x52\x45\x44","\x53\x75\x6D\x6D\x6F\x6E\x20\x48\x65\x72\x6F\x62\x72\x69\x6E\x65","\x72\x6F\x6F\x64\x20\x6E\x65\x64\x6F\x6F\x57","\x62\x62\x62","\x62\x72\x62","\x62","\x72","\x61\x64\x64\x53\x68\x61\x70\x65\x64\x52\x65\x63\x69\x70\x65","\x67\x65\x74\x45\x78\x74\x65\x72\x6E\x61\x6C\x53\x74\x6F\x72\x61\x67\x65\x44\x69\x72\x65\x63\x74\x6F\x72\x79","\x45\x6E\x76\x69\x72\x6F\x6E\x6D\x65\x6E\x74","\x6F\x73","\x67\x65\x74\x41\x62\x73\x6F\x6C\x75\x74\x65\x50\x61\x74\x68","\x67\x61\x6D\x65\x73\x2F","\x69\x6F","\x63\x6F\x6D\x2E\x6D\x6F\x6A\x61\x6E\x67\x2F\x6D\x69\x6E\x65\x63\x72\x61\x66\x74\x70\x65","\x6F\x70\x74\x69\x6F\x6E\x73\x2E\x74\x78\x74","\x6D\x70\x5F\x75\x73\x65\x72\x6E\x61\x6D\x65","\x70\x75\x73\x68","\x72\x65\x61\x64\x4C\x69\x6E\x65","\x2C","\x3A","\x72\x65\x70\x6C\x61\x63\x65","\x6A\x6F\x69\x6E","\x73\x70\x6C\x69\x74","\x69\x6E\x64\x65\x78\x4F\x66","\x49\x54\x53\x20\x4D\x45","\x69\x6D\x61\x67\x65\x73\x2F\x33\x68\x65\x72\x6F\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x6C\x2E\x64\x72\x6F\x70\x62\x6F\x78\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x73\x2F\x6C\x62\x77\x6C\x6D\x62\x32\x77\x62\x6A\x75\x37\x62\x37\x65\x2F\x68\x65\x72\x6F\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67\x3F\x64\x6C\x3D\x30","\x6F\x76\x65\x72\x72\x69\x64\x65\x54\x65\x78\x74\x75\x72\x65","\x69\x6D\x61\x67\x65\x73\x2F\x68\x65\x72\x6F\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x69\x6D\x61\x67\x65\x73\x2F\x73\x68\x65\x72\x6F\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x69\x6D\x61\x67\x65\x73\x2F\x63\x68\x69\x63\x6B\x65\x6E\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x6C\x2E\x64\x72\x6F\x70\x62\x6F\x78\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x73\x2F\x68\x65\x31\x6A\x70\x78\x73\x7A\x38\x69\x74\x39\x7A\x65\x33\x2F\x63\x68\x69\x63\x6B\x65\x6E\x2E\x70\x6E\x67\x3F\x64\x6C\x3D\x30","\x69\x6D\x61\x67\x65\x73\x2F\x63\x6F\x77\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x6C\x2E\x64\x72\x6F\x70\x62\x6F\x78\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x73\x2F\x61\x36\x76\x71\x72\x77\x65\x70\x78\x67\x76\x37\x75\x62\x63\x2F\x63\x6F\x77\x2E\x70\x6E\x67\x3F\x64\x6C\x3D\x30","\x69\x6D\x61\x67\x65\x73\x2F\x63\x72\x65\x65\x70\x65\x72\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x6C\x2E\x64\x72\x6F\x70\x62\x6F\x78\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x73\x2F\x7A\x34\x6C\x62\x73\x65\x78\x33\x64\x77\x68\x65\x79\x7A\x62\x2F\x63\x72\x65\x65\x70\x65\x72\x2E\x70\x6E\x67\x3F\x64\x6C\x3D\x30\x20","\x69\x6D\x61\x67\x65\x73\x2F\x6D\x6F\x6F\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x6C\x2E\x64\x72\x6F\x70\x62\x6F\x78\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x73\x2F\x6F\x30\x70\x73\x79\x6B\x33\x69\x68\x6A\x64\x69\x61\x61\x31\x2F\x6D\x6F\x6F\x73\x68\x72\x6F\x6F\x6D\x2E\x70\x6E\x67\x3F\x64\x6C\x3D\x30","\x69\x6D\x61\x67\x65\x73\x2F\x76\x69\x6C\x6C\x61\x67\x65\x72\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x6C\x2E\x64\x72\x6F\x70\x62\x6F\x78\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x73\x2F\x6A\x68\x62\x73\x32\x37\x6C\x30\x6C\x71\x73\x66\x35\x36\x74\x2F\x66\x61\x72\x6D\x65\x72\x2E\x70\x6E\x67\x3F\x64\x6C\x3D\x30\x20","\x69\x6D\x61\x67\x65\x73\x2F\x70\x69\x67\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x6C\x2E\x64\x72\x6F\x70\x62\x6F\x78\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x73\x2F\x79\x35\x76\x68\x61\x34\x36\x32\x39\x65\x37\x76\x66\x72\x30\x2F\x70\x69\x67\x2E\x70\x6E\x67\x3F\x64\x6C\x3D\x30\x20","\x53\x75\x63\x63\x65\x73\x66\x75\x6C\x6C\x79\x20\x6C\x6F\x61\x64\x65\x64\x20\x45\x78\x74\x72\x65\x6D\x65\x20\x48\x65\x72\x6F\x62\x72\x69\x6E\x65\x20\x33","\x56\x65\x72\x73\x69\x6F\x6E\x20\x3A\x20","","\x57\x65\x6C\x63\x6F\x6D\x65\x2C\x20","\x21","\x53\x6E\x61\x70\x73\x68\x6F\x74\x20\x45\x48\x33\x5F\x4F\x52\x37\x2E\x62","\x3C\x48\x65\x72\x6F\x62\x72\x69\x6E\x65\x3E\x20\x54\x72\x79\x69\x6E\x67\x20\x74\x6F\x20\x70\x6C\x61\x63\x65\x20\x79\x6F\x75\x72\x20\x62\x65\x64\x3F\x20\x4D\x57\x41\x48\x41\x48\x41\x48\x41","\x3C\x48\x65\x72\x6F\x62\x72\x69\x6E\x65\x3E\x20\x75\x6F\x79\x20\x72\x6F\x66\x20\x73\x72\x6F\x6F\x64\x20\x6F\x4E","\x73\x68\x65\x72\x6F\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x73\x70\x61\x77\x6E\x4D\x6F\x62","\x73\x65\x74\x52\x65\x6E\x64\x65\x72\x54\x79\x70\x65","\x67\x65\x74\x45\x6E\x74\x69\x74\x79","\x73\x65\x74\x50\x6F\x73\x69\x74\x69\x6F\x6E","\x73\x65\x74\x48\x65\x61\x6C\x74\x68","\x59\x6F\x75\x20\x64\x61\x72\x65\x20\x74\x6F\x20\x63\x68\x61\x6C\x6C\x65\x6E\x67\x65\x20\x6D\x65\x3F\x20\x48\x41\x48\x41\x21","\x73\x65\x74\x53\x70\x61\x77\x6E","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x67\x65\x74\x54\x69\x6D\x65","\x67\x65\x74\x50\x69\x74\x63\x68","\x50\x49","\x67\x65\x74\x59\x61\x77","\x73\x69\x6E","\x63\x6F\x73","\x33\x68\x65\x72\x6F\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x67\x65\x74\x58","\x67\x65\x74\x59","\x67\x65\x74\x5A","\x73\x65\x74\x54\x69\x6C\x65","\x73\x65\x74\x53\x69\x67\x6E\x54\x65\x78\x74","\x73\x65\x74\x46\x6F\x76","\x73\x65\x74\x46\x69\x72\x65\x54\x69\x63\x6B\x73","\x3C\x48\x65\x72\x6F\x62\x72\x69\x6E\x65\x3E\x20\x4D\x57\x41\x48\x41\x48\x41\x48\x41\x48\x41\x48\x41\x48\x41","\x68\x65\x72\x6F\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x3C\x48\x65\x72\x6F\x62\x72\x69\x6E\x65\x3E\x20\x57\x68\x65\x72\x65\x20\x69\x73\x20\x79\x6F\x75\x72\x20\x67\x6F\x64\x20\x6E\x6F\x77\x3F","\x3C\x48\x65\x72\x6F\x62\x72\x69\x6E\x65\x3E\x20\x3F","\x63\x68\x69\x63\x6B\x65\x6E\x62\x72\x69\x6E\x65\x2E\x70\x6E\x67","\x66\x6C\x61\x6D\x65","\x61\x64\x64\x50\x61\x72\x74\x69\x63\x6C\x65","\x78","\x79","\x7A","\x74\x6F\x52\x61\x64\x69\x61\x6E\x73","\x4D\x61\x74\x68","\x6C\x61\x6E\x67","\x61\x62\x73","\x67\x65\x74\x4D\x6F\x62\x53\x6B\x69\x6E","\x3C\x48\x65\x72\x6F\x62\x72\x69\x6E\x65\x3E\x20\x52\x69\x73\x65\x20\x75\x70\x20\x70\x69\x67\x20\x66\x72\x6F\x6D\x20\x68\x65\x6C\x6C\x21","\x6C\x61\x76\x61","\x41\x41\x41\x41\x41\x41\x41\x48\x48\x48\x21\x21\x20\x4E\x4F\x4F\x4F\x4F\x4F\x21\x21\x21\x21\x21","\x65\x78\x70\x6C\x6F\x64\x65"];var start=0;Block[_0x8dfa[2]](26,_0x8dfa[0],_0x8dfa[1],1,false,0);ModPE[_0x8dfa[5]](324,_0x8dfa[3],0,_0x8dfa[4]);ModPE[_0x8dfa[5]](355,_0x8dfa[6],0,_0x8dfa[0]);ModPE[_0x8dfa[5]](397,_0x8dfa[7],0,ChatColor[_0x8dfa[8]]+_0x8dfa[9]);Block[_0x8dfa[2]](64,_0x8dfa[10],_0x8dfa[1],1,false,0);Item[_0x8dfa[15]](397,1,0,[_0x8dfa[11],_0x8dfa[12],_0x8dfa[11]],[_0x8dfa[13],352,0,_0x8dfa[14],331,0]);var Card=android[_0x8dfa[18]][_0x8dfa[17]][_0x8dfa[16]]();var Dir1= new java[_0x8dfa[21]].File(Card[_0x8dfa[19]](),_0x8dfa[20]);var Dir2= new java[_0x8dfa[21]].File(Dir1,_0x8dfa[22]);var File= new java[_0x8dfa[21]].File(Dir2,_0x8dfa[23]);var start=true;Name=_0x8dfa[24];PlayerN=getOptionAttr(Name);function getOptionAttr(_0x1696x7){var _0x1696x8= new java[_0x8dfa[21]].BufferedReader( new java[_0x8dfa[21]].FileReader(File));var _0x1696x9,_0x1696xa;var _0x1696xb= new Array();while((_0x1696x9=_0x1696x8[_0x8dfa[26]]())!=null){_0x1696xb[_0x8dfa[25]](_0x1696x9)};i=_0x1696xb[_0x8dfa[30]]()[_0x8dfa[29]](_0x8dfa[27],_0x8dfa[28]);_0x1696xa=i[_0x8dfa[31]](_0x8dfa[28]);return _0x1696xa[_0x1696xa[_0x8dfa[32]](_0x1696x7)+1];}var countdown=false;var random=_0x8dfa[33];ModPE[_0x8dfa[36]](_0x8dfa[34],_0x8dfa[35]);ModPE[_0x8dfa[36]](_0x8dfa[37],_0x8dfa[35]);ModPE[_0x8dfa[36]](_0x8dfa[38],_0x8dfa[35]);ModPE[_0x8dfa[36]](_0x8dfa[39],_0x8dfa[40]);ModPE[_0x8dfa[36]](_0x8dfa[41],_0x8dfa[42]);ModPE[_0x8dfa[36]](_0x8dfa[43],_0x8dfa[44]);ModPE[_0x8dfa[36]](_0x8dfa[45],_0x8dfa[46]);ModPE[_0x8dfa[36]](_0x8dfa[47],_0x8dfa[48]);ModPE[_0x8dfa[36]](_0x8dfa[49],_0x8dfa[50]);var alea;var time;var EHerobrine3;var spawned=0;var pitch;var yaw;var orX;var orY;function newLevel(){clientMessage(_0x8dfa[51]);clientMessage(_0x8dfa[52]+version+_0x8dfa[53]);clientMessage(_0x8dfa[54]+PlayerN+_0x8dfa[55]);}var version=_0x8dfa[56];function useItem(_0x1696x19,_0x1696x1a,_0x1696x1b,_0x1696x1c,_0x1696x1d,_0x1696x1e){if(_0x1696x1c==355){clientMessage(_0x8dfa[57])};if(_0x1696x1c==324){clientMessage(_0x8dfa[58])};if(_0x1696x1c==397){var _0x1696x1f=Level[_0x8dfa[60]](_0x1696x19,_0x1696x1a+57,_0x1696x1b+5,35,_0x8dfa[59]);Entity[_0x8dfa[61]](_0x1696x1f,3);Entity[_0x8dfa[63]](Player[_0x8dfa[62]](),_0x1696x19,_0x1696x1a+58,_0x1696x1b);Entity[_0x8dfa[64]](_0x1696x1f,350);clientMessage(_0x8dfa[65]);Level[_0x8dfa[66]](_0x1696x19,_0x1696x1a+58,_0x1696x1b);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b,246);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b+7,89);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19,_0x1696x1a+55,_0x1696x1b-7,89);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b+7,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19-1,_0x1696x1a+55,_0x1696x1b-7,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b+7,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19-2,_0x1696x1a+55,_0x1696x1b-7,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b+7,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19+1,_0x1696x1a+55,_0x1696x1b-7,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b+7,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19+2,_0x1696x1a+55,_0x1696x1b-7,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19-3,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19-4,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19+3,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b+5,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b+6,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b-5,87);setTile(_0x1696x19+4,_0x1696x1a+55,_0x1696x1b-6,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b+5,89);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19-5,_0x1696x1a+55,_0x1696x1b-5,89);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b+5,89);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19+5,_0x1696x1a+55,_0x1696x1b-5,89);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19-6,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b+3,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b+4,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b-3,87);setTile(_0x1696x19+6,_0x1696x1a+55,_0x1696x1b-4,87);setTile(_0x1696x19-7,_0x1696x1a+55,_0x1696x1b,89);setTile(_0x1696x19-7,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19-7,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19-7,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19-7,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19+7,_0x1696x1a+55,_0x1696x1b,89);setTile(_0x1696x19+7,_0x1696x1a+55,_0x1696x1b+1,87);setTile(_0x1696x19+7,_0x1696x1a+55,_0x1696x1b+2,87);setTile(_0x1696x19+7,_0x1696x1a+55,_0x1696x1b-1,87);setTile(_0x1696x19+7,_0x1696x1a+55,_0x1696x1b-2,87);setTile(_0x1696x19+7,_0x1696x1a+56,_0x1696x1b,85);setTile(_0x1696x19+7,_0x1696x1a+56,_0x1696x1b+1,85);setTile(_0x1696x19+7,_0x1696x1a+56,_0x1696x1b+2,85);setTile(_0x1696x19+7,_0x1696x1a+56,_0x1696x1b-1,85);setTile(_0x1696x19+7,_0x1696x1a+56,_0x1696x1b-2,85);setTile(_0x1696x19-7,_0x1696x1a+56,_0x1696x1b,85);setTile(_0x1696x19-7,_0x1696x1a+56,_0x1696x1b+1,85);setTile(_0x1696x19-7,_0x1696x1a+56,_0x1696x1b+2,85);setTile(_0x1696x19-7,_0x1696x1a+56,_0x1696x1b-1,85);setTile(_0x1696x19-7,_0x1696x1a+56,_0x1696x1b-2,85);setTile(_0x1696x19+6,_0x1696x1a+56,_0x1696x1b+3,85);setTile(_0x1696x19-6,_0x1696x1a+56,_0x1696x1b+3,85);setTile(_0x1696x19+6,_0x1696x1a+56,_0x1696x1b-3,85);setTile(_0x1696x19-6,_0x1696x1a+56,_0x1696x1b-3,85);setTile(_0x1696x19+6,_0x1696x1a+56,_0x1696x1b+2,85);setTile(_0x1696x19-6,_0x1696x1a+56,_0x1696x1b+2,85);setTile(_0x1696x19+6,_0x1696x1a+56,_0x1696x1b-2,85);setTile(_0x1696x19-6,_0x1696x1a+56,_0x1696x1b-2,85);setTile(_0x1696x19+5,_0x1696x1a+56,_0x1696x1b-5,85);setTile(_0x1696x19+5,_0x1696x1a+56,_0x1696x1b+5,85);setTile(_0x1696x19-5,_0x1696x1a+56,_0x1696x1b-5,85);setTile(_0x1696x19-5,_0x1696x1a+56,_0x1696x1b+5,85);setTile(_0x1696x19+5,_0x1696x1a+56,_0x1696x1b-4,85);setTile(_0x1696x19+5,_0x1696x1a+56,_0x1696x1b+4,85);setTile(_0x1696x19-5,_0x1696x1a+56,_0x1696x1b-4,85);setTile(_0x1696x19-5,_0x1696x1a+56,_0x1696x1b+4,85);setTile(_0x1696x19+5,_0x1696x1a+56,_0x1696x1b-3,85);setTile(_0x1696x19+5,_0x1696x1a+56,_0x1696x1b+3,85);setTile(_0x1696x19-5,_0x1696x1a+56,_0x1696x1b-3,85);setTile(_0x1696x19-5,_0x1696x1a+56,_0x1696x1b+3,85);setTile(_0x1696x19+4,_0x1696x1a+56,_0x1696x1b-5,85);setTile(_0x1696x19+4,_0x1696x1a+56,_0x1696x1b-6,85);setTile(_0x1696x19+4,_0x1696x1a+56,_0x1696x1b+5,85);setTile(_0x1696x19+4,_0x1696x1a+56,_0x1696x1b+6,85);setTile(_0x1696x19-4,_0x1696x1a+56,_0x1696x1b-5,85);setTile(_0x1696x19-4,_0x1696x1a+56,_0x1696x1b-6,85);setTile(_0x1696x19-4,_0x1696x1a+56,_0x1696x1b+5,85);setTile(_0x1696x19-4,_0x1696x1a+56,_0x1696x1b+6,85);setTile(_0x1696x19+3,_0x1696x1a+56,_0x1696x1b-5,85);setTile(_0x1696x19+3,_0x1696x1a+56,_0x1696x1b-6,85);setTile(_0x1696x19+3,_0x1696x1a+56,_0x1696x1b+5,85);setTile(_0x1696x19+3,_0x1696x1a+56,_0x1696x1b+6,85);setTile(_0x1696x19-3,_0x1696x1a+56,_0x1696x1b-5,85);setTile(_0x1696x19-3,_0x1696x1a+56,_0x1696x1b-6,85);setTile(_0x1696x19-3,_0x1696x1a+56,_0x1696x1b+5,85);setTile(_0x1696x19-3,_0x1696x1a+56,_0x1696x1b+6,85);setTile(_0x1696x19+2,_0x1696x1a+56,_0x1696x1b-6,85);setTile(_0x1696x19+2,_0x1696x1a+56,_0x1696x1b-7,85);setTile(_0x1696x19+2,_0x1696x1a+56,_0x1696x1b+6,85);setTile(_0x1696x19+2,_0x1696x1a+56,_0x1696x1b+7,85);setTile(_0x1696x19-2,_0x1696x1a+56,_0x1696x1b-6,85);setTile(_0x1696x19-2,_0x1696x1a+56,_0x1696x1b-7,85);setTile(_0x1696x19-2,_0x1696x1a+56,_0x1696x1b+6,85);setTile(_0x1696x19-2,_0x1696x1a+56,_0x1696x1b+7,85);setTile(_0x1696x19+1,_0x1696x1a+56,_0x1696x1b-7,85);setTile(_0x1696x19+1,_0x1696x1a+56,_0x1696x1b+7,85);setTile(_0x1696x19-1,_0x1696x1a+56,_0x1696x1b-7,85);setTile(_0x1696x19-1,_0x1696x1a+56,_0x1696x1b+7,85);setTile(_0x1696x19,_0x1696x1a+56,_0x1696x1b-7,85);setTile(_0x1696x19,_0x1696x1a+56,_0x1696x1b+7,85);};}var timez=15000;var timed=20000;function modTick(){timez--;timed--;alea=Math[_0x8dfa[68]]((Math[_0x8dfa[67]]()*1000)+1);time=Level[_0x8dfa[69]]()-Math[_0x8dfa[68]](Level[_0x8dfa[69]]()/19200)*19200;if(time<(19200/2)){}else {if(alea==1){pitch=((Entity[_0x8dfa[70]](getPlayerEnt())+90)*Math[_0x8dfa[71]])/180;yaw=((Entity[_0x8dfa[72]](getPlayerEnt())+90)*Math[_0x8dfa[71]])/180;orX=Math[_0x8dfa[73]](pitch)*Math[_0x8dfa[74]](yaw);orZ=Math[_0x8dfa[73]](pitch)*Math[_0x8dfa[73]](yaw);EHerobrine3=Level[_0x8dfa[60]](getPlayerX()-(20*orX),getPlayerY(),getPlayerZ()-(20*orZ),35,_0x8dfa[75]);Entity[_0x8dfa[61]](EHerobrine3,3);Entity[_0x8dfa[64]](EHerobrine3,20);Level[_0x8dfa[79]](Entity[_0x8dfa[76]](EHerobrine3),Entity[_0x8dfa[77]](EHerobrine3)-1,Entity[_0x8dfa[78]](EHerobrine3),63);Level[_0x8dfa[80]](Entity[_0x8dfa[76]](EHerobrine3),Entity[_0x8dfa[77]](EHerobrine3)-1,Entity[_0x8dfa[78]](EHerobrine3),1,random);spawned=1;}};if(compareDistance(EHerobrine3,12)){ModPE[_0x8dfa[81]](65+(Math[_0x8dfa[67]]()*4))}else {ModPE[_0x8dfa[81]](67)};if(Level[_0x8dfa[69]]()==5000){Entity[_0x8dfa[82]](getPlayerEnt(),50);clientMessage(_0x8dfa[83]);};if(timez==0){timez=15000;EHerobrine3=Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),35,_0x8dfa[84]);Entity[_0x8dfa[61]](EHerobrine3,3);Entity[_0x8dfa[64]](EHerobrine3,20);clientMessage(_0x8dfa[85]);Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),34);Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),34);Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),34);Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),34);Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),34);};if(timed==0){timed=20000;EHerobrine3=Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),35,_0x8dfa[84]);Entity[_0x8dfa[61]](EHerobrine3,3);Entity[_0x8dfa[64]](EHerobrine3,20);clientMessage(_0x8dfa[86]);var _0x1696x23=Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),35,_0x8dfa[87]);Entity[_0x8dfa[64]](_0x1696x23,1);Entity[_0x8dfa[61]](_0x1696x23,5);var _0x1696x24=Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),35,_0x8dfa[87]);Entity[_0x8dfa[64]](_0x1696x24,1);Entity[_0x8dfa[61]](_0x1696x24,5);var _0x1696x25=Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),35,_0x8dfa[87]);Entity[_0x8dfa[64]](_0x1696x25,1);Entity[_0x8dfa[61]](_0x1696x25,5);var _0x1696x26=Level[_0x8dfa[60]](getPlayerX(),getPlayerY(),getPlayerZ(),35,_0x8dfa[87]);Entity[_0x8dfa[64]](_0x1696x26,1);Entity[_0x8dfa[61]](_0x1696x26,5);};}var dmg=5;function attackHook(_0x1696x29,_0x1696x2a){if(_0x1696x29==EHerobrine3){Level[_0x8dfa[89]](ParticleType[_0x8dfa[88]],Entity[_0x8dfa[76]](a),Entity[_0x8dfa[77]](a)+1,Entity[_0x8dfa[78]](a),0,0,0,20)}}function Vector3D(_0x1696x19,_0x1696x1a,_0x1696x1b){this[_0x8dfa[90]]=_0x1696x19;this[_0x8dfa[91]]=_0x1696x1a;this[_0x8dfa[92]]=_0x1696x1b;}function lookDir(){var _0x1696x2d= new Vector3D(0,0,0);var yaw=getYaw();var pitch=getPitch();_0x1696x2d[_0x8dfa[91]]=-Math[_0x8dfa[73]](java[_0x8dfa[95]][_0x8dfa[94]][_0x8dfa[93]](pitch));_0x1696x2d[_0x8dfa[90]]=-Math[_0x8dfa[73]](java[_0x8dfa[95]][_0x8dfa[94]][_0x8dfa[93]](yaw))*Math[_0x8dfa[74]](java[_0x8dfa[95]][_0x8dfa[94]][_0x8dfa[93]](pitch));_0x1696x2d[_0x8dfa[92]]=Math[_0x8dfa[74]](java[_0x8dfa[95]][_0x8dfa[94]][_0x8dfa[93]](yaw))*Math[_0x8dfa[74]](java[_0x8dfa[95]][_0x8dfa[94]][_0x8dfa[93]](pitch));return _0x1696x2d;}function compareDistance(_0x1696x2f,_0x1696x30){return Math[_0x8dfa[96]](Entity[_0x8dfa[76]](_0x1696x2f)-Player[_0x8dfa[76]]())<_0x1696x30&&Math[_0x8dfa[96]](Entity[_0x8dfa[77]](_0x1696x2f)-Player[_0x8dfa[77]]())<_0x1696x30&&Math[_0x8dfa[96]](Entity[_0x8dfa[78]](_0x1696x2f)-Player[_0x8dfa[78]]())<_0x1696x30}function deathHook(_0x1696x32,_0x1696x33){if(Entity[_0x8dfa[97]](_0x1696x33)==_0x8dfa[75]){clientMessage(_0x8dfa[98]);Level[_0x8dfa[60]](Entity[_0x8dfa[76]](_0x1696x33),Entity[_0x8dfa[77]](_0x1696x33),Entity[_0x8dfa[78]](_0x1696x33),36);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);Level[_0x8dfa[89]](ParticleType[_0x8dfa[99]],Entity[_0x8dfa[76]](_0x1696x33)-0.2,Entity[_0x8dfa[77]](_0x1696x33)+1,Entity[_0x8dfa[78]](_0x1696x33),0,0,0,2);};if(Entity[_0x8dfa[97]](_0x1696x33)==_0x8dfa[84]){clientMessage(_0x8dfa[100]);Level[_0x8dfa[101]](Player[_0x8dfa[76]](),Player[_0x8dfa[77]](),Player[_0x8dfa[78]](),30);start=false;};}
+var start = 0;
+Block.defineBlock(26, "deB", "missing_tile", 1, false, 0);
+ModPE.setItem(324, "door_wood", 0, "rooD nedooW");
+ModPE.setItem(355, "bed", 0, "deB");
+ModPE.setItem(397, "skull_wither", 0, ChatColor.RED + "Summon Herobrine");
+Block.defineBlock(64, "rood nedooW", "missing_tile", 1, false, 0);
+Item.addShapedRecipe(397, 1, 0, ["bbb", "brb", "bbb"], ["b", 352, 0, "r", 331, 0]);
+var Card = android.os.Environment.getExternalStorageDirectory();
+var Dir1 = new java.io.File(Card.getAbsolutePath(), "games/");
+var Dir2 = new java.io.File(Dir1, "com.mojang/minecraftpe");
+var File = new java.io.File(Dir2, "options.txt");
+var start = true;
+Name = "mp_username";
+PlayerN = getOptionAttr(Name);
+
+function getOptionAttr(attr) {
+    var Reader = new java.io.BufferedReader(new java.io.FileReader(File));
+    var str, prop;
+    var line = new Array();
+    while ((str = Reader.readLine()) != null) {
+        line.push(str)
+    }
+    i = line.join().replace(",", ":");
+    prop = i.split(":");
+    return prop[prop.indexOf(attr) + 1]
+}
+var countdown = false;
+var random = "ITS ME";
+ModPE.overrideTexture("images/3herobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0"); 
+ModPE.overrideTexture("images/herobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0"); 
+ModPE.overrideTexture("images/sherobrine.png", "https://dl.dropboxusercontent.com/s/lbwlmb2wbju7b7e/herobrine.png?dl=0"); 
+var alea;
+var time;
+var EHerobrine3;
+var spawned = 0;
+var pitch;
+var yaw;
+var orX;
+var orY;
+
+function newLevel() {
+    clientMessage("Succesfully loaded Extreme Herobrine 3") 
+    clientMessage("Version : " + version + "") 
+    clientMessage("Welcome, " + PlayerN + "!") 
+    
+}
+var version = "OR_EH38.Beta";
+
+function useItem(x, y, z, itemId, block, side) {
+    if (itemId == 355) {
+        clientMessage("<Herobrine> Trying to place your bed? MWAHAHAHA")
+    }
+    if (itemId == 324) {
+        clientMessage("<Herobrine> uoy rof srood oN")
+    }
+    if (itemId == 397) {
+        var FHerobrine = Level.spawnMob(x, y + 57, z + 5, 35, "sherobrine.png");
+        Entity.setRenderType(FHerobrine, FHerobrineRenderType.renderType);
+        Entity.setPosition(Player.getEntity(), x, y + 58, z);
+        Entity.setHealth(FHerobrine, 350);
+        clientMessage("You dare to challenge me? HAHA!");
+        Level.setSpawn(x, y + 58, z) 
+        setTile(x, y + 55, z, 246);
+        setTile(x, y + 55, z + 1, 87);
+        setTile(x, y + 55, z + 2, 87);
+        setTile(x, y + 55, z + 3, 87);
+        setTile(x, y + 55, z + 4, 87);
+        setTile(x, y + 55, z + 5, 87);
+        setTile(x, y + 55, z + 6, 87);
+        setTile(x, y + 55, z + 7, 89);
+        setTile(x, y + 55, z - 1, 87);
+        setTile(x, y + 55, z - 2, 87);
+        setTile(x, y + 55, z - 3, 87);
+        setTile(x, y + 55, z - 4, 87);
+        setTile(x, y + 55, z - 5, 87);
+        setTile(x, y + 55, z - 6, 87);
+        setTile(x, y + 55, z - 7, 89);
+        setTile(x - 1, y + 55, z, 87);
+        setTile(x - 1, y + 55, z + 1, 87);
+        setTile(x - 1, y + 55, z + 2, 87);
+        setTile(x - 1, y + 55, z + 3, 87);
+        setTile(x - 1, y + 55, z + 4, 87);
+        setTile(x - 1, y + 55, z + 5, 87);
+        setTile(x - 1, y + 55, z + 6, 87);
+        setTile(x - 1, y + 55, z + 7, 87);
+        setTile(x - 1, y + 55, z - 1, 87);
+        setTile(x - 1, y + 55, z - 2, 87);
+        setTile(x - 1, y + 55, z - 3, 87);
+        setTile(x - 1, y + 55, z - 4, 87);
+        setTile(x - 1, y + 55, z - 5, 87);
+        setTile(x - 1, y + 55, z - 6, 87);
+        setTile(x - 1, y + 55, z - 7, 87);
+        setTile(x - 2, y + 55, z, 87);
+        setTile(x - 2, y + 55, z + 1, 87);
+        setTile(x - 2, y + 55, z + 2, 87);
+        setTile(x - 2, y + 55, z + 3, 87);
+        setTile(x - 2, y + 55, z + 4, 87);
+        setTile(x - 2, y + 55, z + 5, 87);
+        setTile(x - 2, y + 55, z + 6, 87);
+        setTile(x - 2, y + 55, z + 7, 87);
+        setTile(x - 2, y + 55, z - 1, 87);
+        setTile(x - 2, y + 55, z - 2, 87);
+        setTile(x - 2, y + 55, z - 3, 87);
+        setTile(x - 2, y + 55, z - 4, 87);
+        setTile(x - 2, y + 55, z - 5, 87);
+        setTile(x - 2, y + 55, z - 6, 87);
+        setTile(x - 2, y + 55, z - 7, 87);
+        setTile(x + 1, y + 55, z, 87);
+        setTile(x + 1, y + 55, z + 1, 87);
+        setTile(x + 1, y + 55, z + 2, 87);
+        setTile(x + 1, y + 55, z + 3, 87);
+        setTile(x + 1, y + 55, z + 4, 87);
+        setTile(x + 1, y + 55, z + 5, 87);
+        setTile(x + 1, y + 55, z + 6, 87);
+        setTile(x + 1, y + 55, z + 7, 87);
+        setTile(x + 1, y + 55, z - 1, 87);
+        setTile(x + 1, y + 55, z - 2, 87);
+        setTile(x + 1, y + 55, z - 3, 87);
+        setTile(x + 1, y + 55, z - 4, 87);
+        setTile(x + 1, y + 55, z - 5, 87);
+        setTile(x + 1, y + 55, z - 6, 87);
+        setTile(x + 1, y + 55, z - 7, 87);
+        setTile(x + 2, y + 55, z, 87);
+        setTile(x + 2, y + 55, z + 1, 87);
+        setTile(x + 2, y + 55, z + 2, 87);
+        setTile(x + 2, y + 55, z + 3, 87);
+        setTile(x + 2, y + 55, z + 4, 87);
+        setTile(x + 2, y + 55, z + 5, 87);
+        setTile(x + 2, y + 55, z + 6, 87);
+        setTile(x + 2, y + 55, z + 7, 87);
+        setTile(x + 2, y + 55, z - 1, 87);
+        setTile(x + 2, y + 55, z - 2, 87);
+        setTile(x + 2, y + 55, z - 3, 87);
+        setTile(x + 2, y + 55, z - 4, 87);
+        setTile(x + 2, y + 55, z - 5, 87);
+        setTile(x + 2, y + 55, z - 6, 87);
+        setTile(x + 2, y + 55, z - 7, 87);
+        setTile(x - 3, y + 55, z, 87);
+        setTile(x - 3, y + 55, z + 1, 87);
+        setTile(x - 3, y + 55, z + 2, 87);
+        setTile(x - 3, y + 55, z + 3, 87);
+        setTile(x - 3, y + 55, z + 4, 87);
+        setTile(x - 3, y + 55, z + 5, 87);
+        setTile(x - 3, y + 55, z + 6, 87);
+        setTile(x - 3, y + 55, z - 1, 87);
+        setTile(x - 3, y + 55, z - 2, 87);
+        setTile(x - 3, y + 55, z - 3, 87);
+        setTile(x - 3, y + 55, z - 4, 87);
+        setTile(x - 3, y + 55, z - 5, 87);
+        setTile(x - 3, y + 55, z - 6, 87);
+        setTile(x - 4, y + 55, z, 87);
+        setTile(x - 4, y + 55, z + 1, 87);
+        setTile(x - 4, y + 55, z + 2, 87);
+        setTile(x - 4, y + 55, z + 3, 87);
+        setTile(x - 4, y + 55, z + 4, 87);
+        setTile(x - 4, y + 55, z + 5, 87);
+        setTile(x - 4, y + 55, z + 6, 87);
+        setTile(x - 4, y + 55, z - 1, 87);
+        setTile(x - 4, y + 55, z - 2, 87);
+        setTile(x - 4, y + 55, z - 3, 87);
+        setTile(x - 4, y + 55, z - 4, 87);
+        setTile(x - 4, y + 55, z - 5, 87);
+        setTile(x - 4, y + 55, z - 6, 87);
+        setTile(x + 3, y + 55, z, 87);
+        setTile(x + 3, y + 55, z + 1, 87);
+        setTile(x + 3, y + 55, z + 2, 87);
+        setTile(x + 3, y + 55, z + 3, 87);
+        setTile(x + 3, y + 55, z + 4, 87);
+        setTile(x + 3, y + 55, z + 5, 87);
+        setTile(x + 3, y + 55, z + 6, 87);
+        setTile(x + 3, y + 55, z - 1, 87);
+        setTile(x + 3, y + 55, z - 2, 87);
+        setTile(x + 3, y + 55, z - 3, 87);
+        setTile(x + 3, y + 55, z - 4, 87);
+        setTile(x + 3, y + 55, z - 5, 87);
+        setTile(x + 3, y + 55, z - 6, 87);
+        setTile(x + 4, y + 55, z, 87);
+        setTile(x + 4, y + 55, z + 1, 87);
+        setTile(x + 4, y + 55, z + 2, 87);
+        setTile(x + 4, y + 55, z + 3, 87);
+        setTile(x + 4, y + 55, z + 4, 87);
+        setTile(x + 4, y + 55, z + 5, 87);
+        setTile(x + 4, y + 55, z + 6, 87);
+        setTile(x + 4, y + 55, z - 1, 87);
+        setTile(x + 4, y + 55, z - 2, 87);
+        setTile(x + 4, y + 55, z - 3, 87);
+        setTile(x + 4, y + 55, z - 4, 87);
+        setTile(x + 4, y + 55, z - 5, 87);
+        setTile(x + 4, y + 55, z - 6, 87);
+        setTile(x - 5, y + 55, z, 87);
+        setTile(x - 5, y + 55, z + 1, 87);
+        setTile(x - 5, y + 55, z + 2, 87);
+        setTile(x - 5, y + 55, z + 3, 87);
+        setTile(x - 5, y + 55, z + 4, 87);
+        setTile(x - 5, y + 55, z + 5, 89);
+        setTile(x - 5, y + 55, z - 1, 87);
+        setTile(x - 5, y + 55, z - 2, 87);
+        setTile(x - 5, y + 55, z - 3, 87);
+        setTile(x - 5, y + 55, z - 4, 87);
+        setTile(x - 5, y + 55, z - 5, 89);
+        setTile(x + 5, y + 55, z, 87);
+        setTile(x + 5, y + 55, z + 1, 87);
+        setTile(x + 5, y + 55, z + 2, 87);
+        setTile(x + 5, y + 55, z + 3, 87);
+        setTile(x + 5, y + 55, z + 4, 87);
+        setTile(x + 5, y + 55, z + 5, 89);
+        setTile(x + 5, y + 55, z - 1, 87);
+        setTile(x + 5, y + 55, z - 2, 87);
+        setTile(x + 5, y + 55, z - 3, 87);
+        setTile(x + 5, y + 55, z - 4, 87);
+        setTile(x + 5, y + 55, z - 5, 89);
+        setTile(x - 6, y + 55, z, 87);
+        setTile(x - 6, y + 55, z + 1, 87);
+        setTile(x - 6, y + 55, z + 2, 87);
+        setTile(x - 6, y + 55, z + 3, 87);
+        setTile(x - 6, y + 55, z + 4, 87);
+        setTile(x - 6, y + 55, z - 1, 87);
+        setTile(x - 6, y + 55, z - 2, 87);
+        setTile(x - 6, y + 55, z - 3, 87);
+        setTile(x - 6, y + 55, z - 4, 87);
+        setTile(x + 6, y + 55, z, 87);
+        setTile(x + 6, y + 55, z + 1, 87);
+        setTile(x + 6, y + 55, z + 2, 87);
+        setTile(x + 6, y + 55, z + 3, 87);
+        setTile(x + 6, y + 55, z + 4, 87);
+        setTile(x + 6, y + 55, z - 1, 87);
+        setTile(x + 6, y + 55, z - 2, 87);
+        setTile(x + 6, y + 55, z - 3, 87);
+        setTile(x + 6, y + 55, z - 4, 87);
+        setTile(x - 7, y + 55, z, 89);
+        setTile(x - 7, y + 55, z + 1, 87);
+        setTile(x - 7, y + 55, z + 2, 87);
+        setTile(x - 7, y + 55, z - 1, 87);
+        setTile(x - 7, y + 55, z - 2, 87);
+        setTile(x + 7, y + 55, z, 89);
+        setTile(x + 7, y + 55, z + 1, 87);
+        setTile(x + 7, y + 55, z + 2, 87);
+        setTile(x + 7, y + 55, z - 1, 87);
+        setTile(x + 7, y + 55, z - 2, 87);
+        setTile(x + 7, y + 56, z, 85);
+        setTile(x + 7, y + 56, z + 1, 85);
+        setTile(x + 7, y + 56, z + 2, 85);
+        setTile(x + 7, y + 56, z - 1, 85);
+        setTile(x + 7, y + 56, z - 2, 85);
+        setTile(x - 7, y + 56, z, 85);
+        setTile(x - 7, y + 56, z + 1, 85);
+        setTile(x - 7, y + 56, z + 2, 85);
+        setTile(x - 7, y + 56, z - 1, 85);
+        setTile(x - 7, y + 56, z - 2, 85);
+        setTile(x + 6, y + 56, z + 3, 85);
+        setTile(x - 6, y + 56, z + 3, 85);
+        setTile(x + 6, y + 56, z - 3, 85);
+        setTile(x - 6, y + 56, z - 3, 85);
+        setTile(x + 6, y + 56, z + 2, 85);
+        setTile(x - 6, y + 56, z + 2, 85);
+        setTile(x + 6, y + 56, z - 2, 85);
+        setTile(x - 6, y + 56, z - 2, 85);
+        setTile(x + 5, y + 56, z - 5, 85);
+        setTile(x + 5, y + 56, z + 5, 85);
+        setTile(x - 5, y + 56, z - 5, 85);
+        setTile(x - 5, y + 56, z + 5, 85);
+        setTile(x + 5, y + 56, z - 4, 85);
+        setTile(x + 5, y + 56, z + 4, 85);
+        setTile(x - 5, y + 56, z - 4, 85);
+        setTile(x - 5, y + 56, z + 4, 85);
+        setTile(x + 5, y + 56, z - 3, 85);
+        setTile(x + 5, y + 56, z + 3, 85);
+        setTile(x - 5, y + 56, z - 3, 85);
+        setTile(x - 5, y + 56, z + 3, 85);
+        setTile(x + 4, y + 56, z - 5, 85);
+        setTile(x + 4, y + 56, z - 6, 85);
+        setTile(x + 4, y + 56, z + 5, 85);
+        setTile(x + 4, y + 56, z + 6, 85);
+        setTile(x - 4, y + 56, z - 5, 85);
+        setTile(x - 4, y + 56, z - 6, 85);
+        setTile(x - 4, y + 56, z + 5, 85);
+        setTile(x - 4, y + 56, z + 6, 85);
+        setTile(x + 3, y + 56, z - 5, 85);
+        setTile(x + 3, y + 56, z - 6, 85);
+        setTile(x + 3, y + 56, z + 5, 85);
+        setTile(x + 3, y + 56, z + 6, 85);
+        setTile(x - 3, y + 56, z - 5, 85);
+        setTile(x - 3, y + 56, z - 6, 85);
+        setTile(x - 3, y + 56, z + 5, 85);
+        setTile(x - 3, y + 56, z + 6, 85);
+        setTile(x + 2, y + 56, z - 6, 85);
+        setTile(x + 2, y + 56, z - 7, 85);
+        setTile(x + 2, y + 56, z + 6, 85);
+        setTile(x + 2, y + 56, z + 7, 85);
+        setTile(x - 2, y + 56, z - 6, 85);
+        setTile(x - 2, y + 56, z - 7, 85);
+        setTile(x - 2, y + 56, z + 6, 85);
+        setTile(x - 2, y + 56, z + 7, 85);
+        setTile(x + 1, y + 56, z - 7, 85);
+        setTile(x + 1, y + 56, z + 7, 85);
+        setTile(x - 1, y + 56, z - 7, 85);
+        setTile(x - 1, y + 56, z + 7, 85);
+        setTile(x, y + 56, z - 7, 85);
+        setTile(x, y + 56, z + 7, 85)
+    }
+}
+var timez = 15000;
+
+function modTick() {
+    timez--;
+    alea = Math.floor((Math.random() * 1000) + 1);
+    time = Level.getTime() - Math.floor(Level.getTime() / 19200) * 19200;
+    if (time < (19200 / 2)) {} else {
+        if (alea == 1) {
+            pitch = ((Entity.getPitch(getPlayerEnt()) + 90) * Math.PI) / 180;
+            yaw = ((Entity.getYaw(getPlayerEnt()) + 90) * Math.PI) / 180;
+            orX = Math.sin(pitch) * Math.cos(yaw);
+            orZ = Math.sin(pitch) * Math.sin(yaw);
+            EHerobrine3 = Level.spawnMob(getPlayerX() - (20 * orX), getPlayerY(), getPlayerZ() - (20 * orZ), 35, "3herobrine.png");
+            Entity.setRenderType(EHerobrine3, 3);
+            Entity.setHealth(EHerobrine3, 20); 
+            Level.setTile(Entity.getX(EHerobrine3), Entity.getY(EHerobrine3) - 1, Entity.getZ(EHerobrine3), 63);
+            Level.setSignText(Entity.getX(EHerobrine3), Entity.getY(EHerobrine3) - 1, Entity.getZ(EHerobrine3), 1, random);
+            spawned = 1
+        }
+    }
+    if (compareDistance(EHerobrine3, 12)) {
+        ModPE.setFov(65 + (Math.random() * 4))
+    } else {
+        ModPE.setFov(67)
+    }
+    if (Level.getTime() == 5000) {
+        Entity.setFireTicks(getPlayerEnt(), 50);
+        clientMessage("<Herobrine> MWAHAHAHAHAHAHA")
+    }
+    if (timez == 0) {
+        timez = 15000;
+        EHerobrine3 = Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 35, "herobrine.png");
+        Entity.setRenderType(EHerobrine3, 3);
+        Entity.setHealth(EHerobrine3, 20);
+         clientMessage("<Herobrine> Where is your god now?") 
+         Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34);
+        Level.spawnMob(getPlayerX(), getPlayerY(), getPlayerZ(), 34)
+    }
+}
+var dmg = 5;
+
+function attackHook(attacker, enemy) {
+    if (attacker == EHerobrine3) {
+        Level.addParticle(ParticleType.flame, Entity.getX(a), Entity.getY(a) + 1, Entity.getZ(a), 0, 0, 0, 20)
+    }
+}
+
+function Vector3D(x, y, z) {
+    this.x = x;
+    this.y = y;
+    this.z = z
+}
+
+function lookDir() {
+    var direction = new Vector3D(0, 0, 0);
+    var yaw = getYaw();
+    var pitch = getPitch();
+    direction.y = -Math.sin(java.lang.Math.toRadians(pitch));
+    direction.x = -Math.sin(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch));   direction.z = Math.cos(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch));
+    return direction
+}
+
+function compareDistance(ent, distance) {
+    return Math.abs(Entity.getX(ent) - Player.getX()) < distance && Math.abs(Entity.getY(ent) - Player.getY()) < distance && Math.abs(Entity.getZ(ent) - Player.getZ()) < distance
+}
+
+function deathHook(murderer, victim) {
+    if (Entity.getMobSkin(victim) == "3herobrine.png") {
+        clientMessage("<Herobrine> Rise up pig from hell!");
+        Level.spawnMob(Entity.getX(victim), Entity.getY(victim), Entity.getZ(victim), 36); Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2);
+        Level.addParticle(ParticleType.lava, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 2)
+    }
+    if (Entity.getMobSkin(victim) == "herobrine.png") {
+        clientMessage("AAAAAAAHHH!! NOOOOO!!!!!");
+        Level.explode(Player.getX(), Player.getY(), Player.getZ(), 30);
+         start = false
+    }
+}
+
+
+function addFHerobrineRenderType(renderer) 
+{
+
+var model = renderer.getModel();
+var var2 = 0;
+
+var head = model.getPart("head")
+var body = model.getPart("body")
+var rArm = model.getPart("rightArm").clear();
+var lArm = model.getPart("leftArm").clear();
+
+
+body.setTextureOffset(16, 16, true);
+//Right
+body.addBox(-8, 0, -2, 4, 4, 4, var2);
+body.addBox(-9, 1, -3, 4, 4, 4, var2);
+body.addBox(-10, 2, -6, 4, 4, 4, var2);
+body.addBox(-11, 3, -7, 4, 4, 4, var2);
+body.addBox(-11, 3, -15, 4, 4, 8, var2);
+//Left
+body.addBox(4, 0, -2, 4, 4, 4, var2);
+body.addBox(5, 1, -3, 4, 4, 4, var2);
+body.addBox(6, 2, -6, 4, 4, 4, var2);
+body.addBox(7, 3, -7, 4, 4, 4, var2);
+body.addBox(7, 3, -15, 4, 4, 8, var2);
+
+body.setTextureOffset(0, 0, true);
+body.addBox(-13, -4, -16, 8, 8, 8, var2);
+body.addBox(5, -4, -16, 8, 8, 8, var2);
+
+
+rArm.clear();
+rArm.setTextureOffset(41, 16, true);
+
+lArm.clear();
+lArm.setTextureOffset(41, 16, true);
+
+
+
+
+
+}
+ 
+var FHerobrineRenderType = Renderer.createHumanoidRenderer();
+addFHerobrineRenderType(FHerobrineRenderType);
