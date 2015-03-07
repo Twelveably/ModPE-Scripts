@@ -89,25 +89,27 @@ activate=3;
 if(activate==3){
 this.s++;
 if(this.s==50){
+ModPE.showTipMessage("Make a shelter from anything")
 }
 if(this.s==100){
-
+var Bomb= Level.spawnMob(getPlayerX(),getPlayerY()+20,getPlayerZ(), 81);
+ModPE.showTipMessage("§4Watch out!")
 }
 if(this.s==200){
 timespin=1;
 clientMessage("§4Error 303: Nether timespinSystem Broke")
 }
 if(this.s==500){
-
+var Bomb= Level.spawnMob(getPlayerX(),getPlayerY()+20,getPlayerZ(), 81);
 }
 if(this.s==700){ 
-Herobrine = Level.spawnMob(getPlayerX(),getPlayerY()+1,getPlayerZ()+2, 35,"mob/char.png");
+ModPE.showTipMessage("Watch your back!")
+Herobrine = Level.spawnMob(getPlayerX(),getPlayerY()+1,getPlayerZ()+1, 35,"mob/char.png");
 Entity.setHealth(Herobrine, 900000000);
 Entity.setRenderType(Herobrine,3);
 }
-if(this.s==780){
+if(this.s==800){
 Entity.remove(Herobrine)
-Player.setHealth(0)
 }
 
 }
@@ -147,7 +149,8 @@ var timespin = 0;
 
 
 function entityRemovedHook(entity) {
-	if(Entity.getEntityTypeId(entity) == 81) { 
+	if (Entity.getEntityTypeId(entity) == 81) { 
 		Level.explode(Entity.getX(entity),Entity.getY(entity),Entity.getZ(entity),5);
 	}
 }
+
