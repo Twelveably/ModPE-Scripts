@@ -149,7 +149,7 @@ var timespin = 0;
 
 
 function entityRemovedHook(entity) {
-	if (Entity.getEntityTypeId(entity) == 81) { 
+	if(Entity.getEntityTypeId(entity) == 81) { 
 		Level.explode(Entity.getX(entity),Entity.getY(entity),Entity.getZ(entity),5);
 	}
 }
