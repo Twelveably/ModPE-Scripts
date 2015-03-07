@@ -1,0 +1,147 @@
+
+var Card = android.os.Environment.getExternalStorageDirectory();
+var Dir1 = new java.io.File(Card.getAbsolutePath(), "games/");
+var Dir2 = new java.io.File(Dir1, "com.mojang/minecraftpe");
+var File = new java.io.File(Dir2, "options.txt");
+
+Header1 = "mp_username";
+PlayerName = getOptionAttr(Header1);
+
+function getOptionAttr(attr){
+
+var Reader = new java.io.BufferedReader(new java.io.FileReader(File));
+
+var str, prop;
+var line = new Array();
+
+while((str = Reader.readLine()) != null){
+
+line.push(str);
+
+}
+
+i = line.join().replace(",", ":");
+prop = i.split(":");
+
+return prop[prop.indexOf(attr) + 1];
+
+}
+
+
+function server(chat) {
+    try{
+clientMessage("§4[Bagas-Craft] §f" + chat)
+     }
+catch(err){
+clientMessage(ChatColor.WHITE + chat);
+}
+  }
+
+
+function newLevel() {
+     server("§aWelcome, " + PlayerName)
+     server("§4This mod is compatible with all my mod")
+}
+
+function procCmd(cmd) {
+var cmd = cmd.split (" ");
+
+if(cmd[0] == "help")
+  {
+if(cmd[1] == "1")
+  {
+  server("§a*/help number")
+  server("§a*/gamemode creative/survival")
+  server("§a*/heal")
+  server("§a*/time set day/night")
+  }
+if(cmd[1] == "2")
+{
+  server("§a*/fly on/off")
+  server("§a*/clearinv")
+  server("§a*/kill")
+  }
+if(cmd[1] == "number")
+  {
+  server("§aLooks like we have a idiot over here..")
+  server("§a")
+  }
+  }
+	if(cmd[0] == "time set") { 
+	if(cmd[1] == "day"){
+		Level.setTime(0); 
+		clientMessage("Time set to day.");
+  }
+  if(cmd[1] == "night"){
+   Level.setTime(14000)
+   server("Time set to night.");
+	}
+	 }
+	
+	if(cmd[0] == "gamemode") {
+	if(cmd[1] == "survival") {
+		Level.setGameMode(0);
+		server("Gamemode set to survival.");
+	}
+	if (cmd[1] == "creative") { 
+		Level.setGameMode(1); 
+		server("Gamemode set to creative.");
+	}
+}
+	if(cmd[0] == "heal") {
+	  if(Level.getGameMode() == 0){
+		Player.setHealth(20); 
+		server("Health set to 10 hearts.");
+		}
+		else if(Level.getGameMode() == 1){
+		server("Unable to heal in Creative!")
+		
+	}
+}
+if(cmd[0] == "clearinv")
+  {
+if(Level.getGameMode() == 1)
+    {
+     server("§4Cannot clear inventory in Creative Mode!")
+}
+if(Level.getGameMode() == 0)
+    {
+     server("§2Successfully cleared your inventory!")
+     for (var i = 0; i < 50; i++)
+       Player.clearInventorySlot(i);
+}
+  }
+ if(cmd[0] == "fly" && cmd[1] == "on")
+  {
+if(Level.getGameMode() == 1)
+    {
+    server("§4You can fly already...")
+}
+if(Level.getGameMode() == 0)
+    {
+    server("§2Fly Mode Activated!")
+    Player.setCanFly(true)
+}
+  }
+
+else if(cmd[0] == "fly" && cmd[1] == "off")
+  {
+if(Level.getGameMode() == 1)
+    {
+    server("§4Can't turn fly mode off in Creative!")
+}
+if(Level.getGameMode() == 0)
+    {
+    server("§2Fly Mode Deactivated!")
+    Player.setCanFly(false)
+}
+  }
+  if(cmd[0] == "kill")
+  {
+     server("§2You Died!")
+     Player.setHealth(0);
+}
+}
+
+
+  
