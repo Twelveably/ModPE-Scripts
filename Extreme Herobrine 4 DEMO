@@ -1,0 +1,153 @@
+function newLevel(){
+clientMessage("§aExtreme Herobrine 4")
+clientMessage("§aEnd of The World")
+}
+var Card = android.os.Environment.getExternalStorageDirectory();
+var Dir1 = new java.io.File(Card.getAbsolutePath(), "games/");
+var Dir2 = new java.io.File(Dir1, "com.mojang/minecraftpe");
+var File = new java.io.File(Dir2, "options.txt");
+
+Header1 = "mp_username";
+PlayerName = getOptionAttr(Header1);
+
+function getOptionAttr(attr){
+
+var Reader = new java.io.BufferedReader(new java.io.FileReader(File));
+
+var str, prop;
+var line = new Array();
+
+while((str = Reader.readLine()) != null){
+
+line.push(str);
+
+}
+
+i = line.join().replace(",", ":");
+prop = i.split(":");
+
+return prop[prop.indexOf(attr) + 1];
+
+}
+this.s = 0;
+this.i = 500;
+this.timeset = 5000;
+this.timefin = 0;
+this.t = 500;
+function modTick(){
+if(activate==1){
+this.i--;
+Entity.setPosition(Angel,Entity.getX(Angel),Entity.getY(Angel),Entity.getZ(Angel));
+Entity.setPosition(Herobrine,Entity.getX(Herobrine),Entity.getY(Herobrine),Entity.getZ(Herobrine));
+Entity.setVelY(Herobrine,0.001);
+Entity.setVelY(Angel,0.001);
+if(this.i == 500){
+clientMessage("Hello there...")
+}
+if(this.i == 450){
+clientMessage("Hmm.. Your name is " + PlayerName +" right?") 
+}
+if(this.i == 400){
+clientMessage("We need your help");
+}
+if(this.i == 350){
+clientMessage("Herobrine have summoned Entity 303")
+}
+if(this.i == 300){
+clientMessage("to help him to destroy the world.")
+}
+if(this.i == 250){
+clientMessage("You need to kill them before")
+}
+if(this.i == 200){
+clientMessage("the sun and the moon fall into our world")
+}
+if(this.i == 150){
+clientMessage("Good luck")
+}
+if(this.i == 100){
+activate=2;
+}
+}
+if(activate==2){
+this.t--;
+Entity.setVelY(Angel,0.800);
+Level.addParticle(ParticleType.cloud, Entity.getX(Angel)-0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
+Level.addParticle(ParticleType.cloud, Entity.getX(Angel) , Entity.getY(Angel), Entity.getZ(Angel), 0, 0, 0, 2);
+Level.addParticle(ParticleType.cloud, Entity.getX(Angel)+0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
+Level.addParticle(ParticleType.flame, Entity.getX(Angel)-0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
+Level.addParticle(ParticleType.flame, Entity.getX(Angel) , Entity.getY(Angel), Entity.getZ(Angel), 0, 0, 0, 2);
+Level.addParticle(ParticleType.flame, Entity.getX(Angel)+0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
+Level.addParticle(ParticleType.redstone, Entity.getX(Angel)-0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
+Level.addParticle(ParticleType.redstone, Entity.getX(Angel) , Entity.getY(Angel), Entity.getZ(Angel), 0, 0, 0, 2);
+Level.addParticle(ParticleType.redstone, Entity.getX(Angel)+0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
+if(this.t==0){
+Entity.remove(Angel)
+activate=3;
+}
+}
+if(activate==3){
+this.s++;
+if(this.s==50){
+}
+if(this.s==100){
+
+}
+if(this.s==200){
+timespin=1;
+clientMessage("§4Error 303: Nether timespinSystem Broke")
+}
+if(this.s==500){
+
+}
+if(this.s==700){ 
+Herobrine = Level.spawnMob(getPlayerX(),getPlayerY()+1,getPlayerZ()+2, 35,"mob/char.png");
+Entity.setHealth(Herobrine, 900000000);
+Entity.setRenderType(Herobrine,3);
+}
+if(this.s==780){
+Entity.remove(Herobrine)
+Player.setHealth(0)
+}
+
+}
+if(timespin==1){
+if(this.timeset < 14000){
+
+Level.setTime(timeset);
+this.timeset = this.timeset+50;
+}
+}
+
+
+if(this.timefin == 1){
+
+Level.setTime(11000);
+
+}
+
+}
+
+
+
+function useItem(x, y, z, itemId, blockId, side) {
+if(itemId==280){
+ activate=1;
+Angel = Level.spawnMob(x,y+1,z, 35,"mob/char.png");
+Entity.setRenderType(Angel,3);
+}
+}
+var Angel = [];
+var xx=[];
+var yy=[];
+var zz=[];
+var Herobrine = [];
+var activate = 0;
+var timespin = 0;
+
+
+function entityRemovedHook(entity) {
+	if(Entity.getEntityTypeId(entity) == 81) { 
+		Level.explode(Entity.getX(entity),Entity.getY(entity),Entity.getZ(entity),5);
+	}
+}
