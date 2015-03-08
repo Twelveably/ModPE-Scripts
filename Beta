@@ -1,0 +1,92 @@
+//Mod Created by EliteGamerHD
+// DO NOT COPY THIS MOD! AND CLAIM IT AS YOURS!!!
+ 
+function newLevel() {
+clientMessage("Mod Created by EliteGamerHD");
+}
+ 
+ModPE.setItem(502, "fireball", 0, "Meteor Saber");
+ModPE.setItem(503, "blaze_powder", 0, "Green Saber");
+ModPE.setItem(504, "iron_horse_armor", 0, "Red Saber");
+ModPE.setItem(505, "blaze_rod", 0, "Yellow Saber");
+ModPE.setItem(506, "diamond_horse_armor", 0, "Blue Saber");
+ModPE.setItem(507, "gold_horse_armor", 0, "Legendary Saber");
+ 
+function attackHook(attacker,victim){
+ 
+if(Player.getCarriedItem() == 503){
+ 
+var dmx = 1;
+ 
+Level.Explode(Entity.getX(victim), Entity.getY(victim), Entity.getZ(victim), 30);
+}
+ 
+if(Player.getCarriedItem() == 504){
+var dmy = 6;
+ 
+preventDefault();
+if(getYaw() < 0)
+{
+var temp = getYaw()+90;
+for(i=0; temp<0; i++)
+{
+temp += 360;
+}
+x = Math.cos(temp*(Math.PI/180));
+z = Math.sin(temp*(Math.PI/180));
+setVelX(victim, x*10);
+setVelY(victim, 1.55);
+setVelZ(victim, z*10);
+}
+else if(getYaw() > 0 && getYaw() < 360){
+var temp = getYaw()+90;
+x = Math.cos(temp*(Math.PI/180));
+z = Math.sin(temp*(Math.PI/180));
+setVelX(victim, x*10);
+setVelY(victim, 1.55);
+setVelZ(victim, z*10);
+Level.playSoundEnt(attacker, "random.break", 100, 100);
+}
+else if(getYaw() >= 360){
+var temp = getYaw()+90;
+for(i=0; temp>=360; i++)
+{
+temp -= 360;
+}
+x = Math.cos(temp*(Math.PI/180));
+z = Math.sin(temp*(Math.PI/180));
+setVelX(victim, x*10);
+setVelY(victim, 1.55);
+setVelZ(victim, z*10);
+Level.playSoundEnt(attacker, "random.break", 100, 100);
+ 
+Entity.setHealth(victim, Entity.getHealth(victim) - dmg);
+}
+}
+if(Player.getCarriedItem() == 505){
+ 
+var dmz = 3;
+ 
+Entity.setHealth(victim, Entity.getHealth(victim) - dmg);
+Entity.setFireTicks(victim, 3);
+}
+ 
+if(Player.getCarriedItem() == 506){
+ 
+var dmn = 4;
+Entity.setHealth(victim, Entity.getHealth(victim) - dmg);
+Entity.setFireTicks(victim, 4);
+}
+ 
+if(Player.getCarriedItem() == 507){
+ 
+var dmq = 2;
+ 
+Entity.setHealth(victim, Entity.getHealth(victim) - dmg);
+Entity.setFireTicks(victim, 1)
+Level.explode(Entity.getX(victim), Entity.getY(victim), Entity.getZ(victim), 5);
+ 
+clientMessage("You Just Got Bamboozled!!!")
+}
+ 
+}
