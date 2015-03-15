@@ -51,7 +51,7 @@ Block.setDestroyTime(17,-1);
 if(Player.getPointedBlockId()==17 && Player.getCarriedItem()==271 || Player.getCarriedItem()==275 || Player.getCarriedItem()==279 || Player.getCarriedItem()==286 || Player.getCarriedItem()==258) {
 Block.setDestroyTime(17,10);
 }
-if(Player.getCarriedItem()==50 || Player.getCarriedItem()==51 && blockId==46){
+if(Player.getCarriedItem()==50 && blockId==46){
 Level.spawnMob(x,y+1,z,65);
 setTile(x,y,z,0);
 }
