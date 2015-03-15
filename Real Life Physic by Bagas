@@ -3,10 +3,10 @@ if(Level.getGameMode()==0){
 clientMessage("Real Life Physic v1.4")
 clientMessage("By BagasMC")
 	I=ModPE.readData("I");
-	 Level.dropItem(Player.getX(),Player.getY(),Player.getX() ,1,275,1);
-	 Level.dropItem(Player.getX(),Player.getY(),Player.getX() ,1,274,1);
-	 Level.dropItem(Player.getX(),Player.getY(),Player.getX(), 1,273,1);
-	 Level.dropItem(Player.getX(),Player.getY(),Player.getX(), 1,272,1);
+	 Level.dropItem(Player.getX(),Player.getY()+1,Player.getX() ,1,275,1);
+	 Level.dropItem(Player.getX(),Player.getY()+1,Player.getX() ,1,274,1);
+	 Level.dropItem(Player.getX(),Player.getY()+1,Player.getX(), 1,273,1);
+	 Level.dropItem(Player.getX(),Player.getY()+1,Player.getX(), 1,272,1);
 	 
 	 
 }
@@ -65,4 +65,3 @@ var pitch;
 var yaw;
 var orX;
 var orY;
-
