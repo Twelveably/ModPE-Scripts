@@ -38,8 +38,6 @@ function modTick(){
 if(activate==1){
 this.i--;
 Entity.setPosition(Angel,Entity.getX(Angel),Entity.getY(Angel),Entity.getZ(Angel));
-Entity.setPosition(Herobrine,Entity.getX(Herobrine),Entity.getY(Herobrine),Entity.getZ(Herobrine));
-Entity.setVelY(Herobrine,0.001);
 Entity.setVelY(Angel,0.001);
 if(this.i == 500){
 clientMessage("Hello there...")
@@ -51,49 +49,40 @@ if(this.i == 400){
 clientMessage("We need your help");
 }
 if(this.i == 350){
-clientMessage("Herobrine have summoned Entity 303")
+clientMessage("Herobrine gained more powers")
 }
 if(this.i == 300){
-clientMessage("to help him to destroy the world.")
+clientMessage("Now no one could defeat him")
 }
 if(this.i == 250){
 clientMessage("You need to kill them before")
 }
 if(this.i == 200){
-clientMessage("the sun and the moon fall into our world")
-}
-if(this.i == 150){
-clientMessage("Good luck")
-}
-if(this.i == 100){
 activate=2;
 }
 }
 if(activate==2){
 this.t--;
-Entity.setVelY(Angel,0.800);
-Level.addParticle(ParticleType.cloud, Entity.getX(Angel)-0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
-Level.addParticle(ParticleType.cloud, Entity.getX(Angel) , Entity.getY(Angel), Entity.getZ(Angel), 0, 0, 0, 2);
-Level.addParticle(ParticleType.cloud, Entity.getX(Angel)+0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
-Level.addParticle(ParticleType.flame, Entity.getX(Angel)-0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
-Level.addParticle(ParticleType.flame, Entity.getX(Angel) , Entity.getY(Angel), Entity.getZ(Angel), 0, 0, 0, 2);
-Level.addParticle(ParticleType.flame, Entity.getX(Angel)+0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
-Level.addParticle(ParticleType.redstone, Entity.getX(Angel)-0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
-Level.addParticle(ParticleType.redstone, Entity.getX(Angel) , Entity.getY(Angel), Entity.getZ(Angel), 0, 0, 0, 2);
-Level.addParticle(ParticleType.redstone, Entity.getX(Angel)+0.2 , Entity.getY(Angel)+1, Entity.getZ(Angel), 0, 0, 0, 2);
+Entity.setVelY(100)
+Herobrine = Level.spawnMob(Entity.getX(Angel),Entity.getY(Angel)+1,Entity.getZ(Angel)+1, 35,"mob/char.png");
+Entity.setRenderType(Herobrine,3);
+clientMessage("MWAHAHAHAHAHAHA")
 if(this.t==0){
 Entity.remove(Angel)
+Entity.remove(Herobrine)
 activate=3;
 }
 }
 if(activate==3){
 this.s++;
 if(this.s==50){
-ModPE.showTipMessage("Make a shelter from anything")
+
 }
 if(this.s==100){
 var Bomb= Level.spawnMob(getPlayerX(),getPlayerY()+20,getPlayerZ(), 81);
-ModPE.showTipMessage("§4Watch out!")
+Herobrine = Level.spawnMob(getPlayerX(),getPlayerY()+1,getPlayerZ()+5, 35,"mob/char.png");
+Entity.setHealth(Herobrine, 5);
+Entity.setRenderType(Herobrine,26);
 }
 if(this.s==200){
 timespin=1;
@@ -103,7 +92,7 @@ if(this.s==500){
 var Bomb= Level.spawnMob(getPlayerX(),getPlayerY()+20,getPlayerZ(), 81);
 }
 if(this.s==700){ 
-ModPE.showTipMessage("Watch your back!")
+
 Herobrine = Level.spawnMob(getPlayerX(),getPlayerY()+1,getPlayerZ()+1, 35,"mob/char.png");
 Entity.setHealth(Herobrine, 900000000);
 Entity.setRenderType(Herobrine,3);
@@ -153,4 +142,3 @@ function entityRemovedHook(entity) {
 		Level.explode(Entity.getX(entity),Entity.getY(entity),Entity.getZ(entity),5);
 	}
 }
-
