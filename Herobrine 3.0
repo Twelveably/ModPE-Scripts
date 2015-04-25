@@ -61,7 +61,7 @@ function useItem(x,y,z,itemId,blockId,side){
 	
 	 PlayerName = getOptionAttr(Header1);
 	 
-	 clientMessage("Who.... why are you awakening me again" + PlayerName + "?!");
+	 clientMessage("Who.... why are you awakening me again " + PlayerName + "?!");
 	 
 	 Activate = 1;
   
