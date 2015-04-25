@@ -21,6 +21,9 @@ function procCmd(cmd) {
 	}
 }
 
+function newLevel(){
+Activate = 0;
+}
 function getOptionAttr(attr){
 
 var Reader = new java.io.BufferedReader(new java.io.FileReader(File));
@@ -183,4 +186,6 @@ function deathHook(murderer, victim) {
      
      }
      }
-
+function leaveGame(){
+Activate = 0;
+}
