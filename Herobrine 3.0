@@ -179,11 +179,19 @@ function lookDir(yaw, pitch)
 
 
 function deathHook(murderer, victim) {
-    if (Entity.getMobSkin(victim) == "herobrine.png") {
-        clientMessage("<Herobrine> N-Nooooo!!")
+    if (victim==getPlayerEnt()) {
+        clientMessage("<Herobrine> Come back if you are good at fighting, mwahahaha!")
      Level.addParticle(ParticleType.redstone, Entity.getX(victim) - 0.2, Entity.getY(victim) + 1, Entity.getZ(victim), 0, 0, 0, 1000);
      Activate = 0;
      
+     }
+     }
+     
+     function entityRemovedHook(entity)
+{
+if(entity==DHerobrine){
+clientMessage("<Herobrine> AAAAGH!!!")
+     Activate = 0;
      }
      }
 function leaveGame(){
