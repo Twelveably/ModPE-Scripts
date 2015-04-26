@@ -46,7 +46,7 @@ return prop[prop.indexOf(attr) + 1];
 
 function newLevel(){ //when a world is loaded
 
- clientMessage(ChatColor.RED + "DHerobrine Revenge ModPE");
+ clientMessage(ChatColor.RED + "Herobrine Revenge ModPE");
 
 }
 
