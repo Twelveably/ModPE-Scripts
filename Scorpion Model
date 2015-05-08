@@ -1,3 +1,7 @@
+
+Texture: https://www.dropbox.com/s/opcdm4k2il74sut/bsasas.png?dl=0
+
+
 function addRenderType(renderer){
 var model = renderer.getModel();
 var head = model.getPart("head").clear();
