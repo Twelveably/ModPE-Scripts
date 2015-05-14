@@ -1,1 +1,72 @@
+var dessage = [" I just noticed the side of my arm doesnt have a texture Lmao", " When i have full iron armor I be like; I AM IRONMAAAAAAN and then goes on a rampage and killing vilgigers"," Do you know any other 0.11.0 mods?","But i love smoking! JK."," Wtf so many random people folllwing me on Twitter Lmao"," Military np"," Can you explain how to add a hat layer on skins?"," Also did you see Tomasso's Tweet about a picture of the nether for mcpe?"," I got a question. why does almost everyone keep hating on JB?,I dun understwand","Lmao. Im sure my wifi sucks more xD"," Bluckloncher xD", "Herobrine's Dream will come true! He will be able to fly! Oh wait why am I celebrating thats a bad thing for me"," Whaaaaaaat!!!!!! I didnt know PufferFish can give you Nausea"," Rabbids"," Oh god now i have a fever... WHYYYYYYY"]
 
+
+ModPE.overrideTexture("images/mob/EliteGamerHD.png", " https://dl.dropboxusercontent.com/s/0eef46zclqszrgu/EliteGamerHD.png?dl=0 "); 
+var EliteGamerHD;
+var spawn = 0;
+var follow = 0;
+function useItem(x,y,z,itemId,blockId)
+{
+if(itemId==280 && spawn==0)
+{
+spawn = 1;
+EliteGamerHD = Level.spawnMob(x, y + 1, z, 11, "mob/EliteGamerHD.png");
+Entity.setRenderType(EliteGamerHD, 3);
+Entity.setHealth(EliteGamerHD, 20);
+clientMessage("<server> EliteGamerHD joined the game.");
+
+}
+else if(spawn == 1 && itemId==280){
+Entity.setPosition(EliteGamerHD,x,y+1,z)
+clientMessage("Teleported EliteGamerHD to you.")
+ }
+ }
+
+function newLevel() {
+clientMessage("EliteGamerHD Mod by BagasMC")
+}
+
+function modTick(){
+if(spawn == 1){
+this.message--;
+if(follow == 1){
+if (Math.sqrt(Math.pow(Player.getX() - Entity.getX(EliteGamerHD), 2) +  Math.pow(Player.getZ() - Entity.getZ(EliteGamerHD), 2)) < 5) return;
+
+var angle = Math.atan2((Player.getZ() - Entity.getZ(EliteGamerHD)), (Player.getX() - Entity.getX(EliteGamerHD)));
+Entity.setVelX(EliteGamerHD,(Math.cos(angle) * 0.2));
+Entity.setVelZ(EliteGamerHD,(Math.sin(angle) * 0.2));
+Entity.setRot(EliteGamerHD, (((angle * 180) / Math.PI) - 90), Entity.getPitch(EliteGamerHD));
+}
+        if(this.message == 0) {
+               		var rnd1 = Math.floor(Math.random()*(dessage.length)); 
+        this.message = 100;
+		clientMessage("<EliteGamerHD>" + " " + dessage[rnd1]);
+}
+}
+}
+
+this.message = 100;
+
+function attackHook(a,v)
+{
+if(follow == 0 && Player.getCarriedItem() == 265 && v == EliteGamerHD)
+{
+clientMessage("<EliteGamerHD> GIVE ME THAT IRON!")
+follow=1;
+preventDefault();
+}
+
+else if(follow == 1 && v == EliteGamerHD && Player.getCarriedItem() == 265)
+{
+clientMessage("<EliteGamerHD> Ouch!")
+follow=0;
+}
+}
+
+function entityRemovedHook(entity)
+{
+    if (entity == EliteGamerHD) {
+        clientMessage("<server> EliteGamerHD left the game.")
+     spawn = 0;
+     }
+     }
