@@ -1,3 +1,5 @@
+Skin :  https://www.dropbox.com/s/3wme75a921x0whj/illuminati.png?dl=0
+
 function addRenderType(renderer){
 var model = renderer.getModel();
 var head = model.getPart("head").clear();
@@ -19,3 +21,5 @@ body.addBox(-2.5,-20,-4, 12, 11, 0);
 }
 var RenderType = Renderer.createHumanoidRenderer();
 addRenderType(RenderType);
+
+
