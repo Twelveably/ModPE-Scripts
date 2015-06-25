@@ -1,4 +1,4 @@
-function addRenderType(renderer){
+function addGuardianSwipeLRenderType(renderer){
 var model = renderer.getModel();
 var head = model.getPart("head").clear();
 var body = model.getPart("body").clear();
@@ -19,11 +19,11 @@ body.addBox(6,2,-7, 2, 12, 12););
 body.setTextureOffset( 40, 0);
 body.addBox(-2,6,7, 4, 4, 8););
 body.setTextureOffset( 0, 54);
-body.addBox(-0.5,6.5,15, 3, 3, 7););
+body.addBox(-2.5,6.5,15, 3, 3, 7););
 body.setTextureOffset( 41, 32);
-body.addBox(1,7,22, 2, 2, 6););
+body.addBox(-3,7,22, 2, 2, 6););
 body.setTextureOffset( 16, 19);
-body.addBox(2,3.5,27, 0, 9, 9););
+body.addBox(-2,3.5,27, 0, 9, 9););
 body.setTextureOffset( 8, 0);
 body.addBox(-1,7,-9.5, 2, 2, 1););
 body.setTextureOffset( 0, 7);
@@ -219,5 +219,5 @@ body.addBox(-1,17,8, 2, 2, 2););
 body.setTextureOffset( 0, 2);
 body.addBox(-1,17.5,8.5, 2, 2, 2););
 }
-var RenderType = Renderer.createHumanoidRenderer();
-addRenderType(RenderType);
+var GuardianSwipeLRenderType = Renderer.createHumanoidRenderer();
+addGuardianSwipeLRenderType(Guardian Swipe LRenderType);
