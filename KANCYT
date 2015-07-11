@@ -1,0 +1,3 @@
+ModPE.overrideTexture("mob/zombie.png","https://dl.dropboxusercontent.com/s/pk2jdx4l6bkkoyj/skin20150515233817682089022601.png?dl=0")
+ModPE.overrideTexture("mob/pigzombie.png","https://dl.dropboxusercontent.com/s/cxx4erjtgsqrib7/pinkgirl8964212.png?dl=0")
+ModPE.overrideTexture("mob/skeleton.png","https://dl.dropboxusercontent.com/s/50tf0gmha12b7e6/cuteanimegirl8874435.png?dl=0")
