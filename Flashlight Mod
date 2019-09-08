@@ -1,0 +1,127 @@
+Activity=com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
+
+var flashlightlight=0;
+var flashlightBtn = null;
+var packet = null;
+ var serverpacket = null;
+ var ppacket;
+
+function enterNewLevelMessage(serverstringpacket,serverstring,string)
+ {
+  packet = serverstringpacket;
+   if(packet=="[]")
+    {
+     clientMessage("[" + serverstring + "]" + string)
+    }
+     if(packet=="()")
+      {
+       clientMessage("(" + serverstring + ")" + string)
+      }
+     }
+   
+function FlashGUI(){
+  var activity = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
+  activity.runOnUiThread(new java.lang.Runnable({ run: function() {
+        try {	
+          flashlightBtn = new android.widget.PopupWindow();
+          var layout = new android.widget.RelativeLayout(activity);
+          var button = new android.widget.Button(activity);
+          button.setText("Flash Light");
+          button.setOnClickListener(new android.view.View.OnClickListener({
+                onClick: function(viewarg) {
+			
+			if (flashlightlight){
+				flashlightlight=0;
+			}
+			else{
+				flashlightlight=1;
+			}
+			
+                }
+          }));
+          layout.addView(button);
+          flashlightBtn.setContentView(layout);
+          flashlightBtn.setWidth(android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT);
+          flashlightBtn.setHeight(android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT);
+          flashlightBtn.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
+          flashlightBtn.showAtLocation(activity.getWindow().getDecorView(), android.view.Gravity.BOTTOM, 0, 80);
+        }catch(problem){
+          print("Button could not be displayed: " + problem);
+        }
+  }}));
+}
+
+
+function newLevel()
+ {
+  enterNewLevelMessage("[]", "MCPE", " Advanced Flash Light Mod by BagasMC");
+   FlashGUI();
+    }
+
+function leaveGame(){
+	var activity = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
+	activity.runOnUiThread(new java.lang.Runnable({ run: function() {
+	if(flashlightBtn != null) {
+		flashlightBtn.dismiss();
+		flashlightBtn=null;
+	}
+  }}));
+}	
+
+var I = 0;
+
+function modTick()
+ {
+  if(flashlightlight==1 && isPickingEntity == false )
+   {
+			isPickingEntity = true;
+			
+	}else if(flashlightlight==1 && isPickingEntity == true)  {
+		 			isPickingEntity = false;
+}
+	if(isPickingEntity)
+	{
+	tick++;
+		var ggMobDirection = lookDir(Entity.getYaw(Player.getEntity()), Entity.getPitch(Player.getEntity()));
+		if(I==1) {
+			I=0;
+			ModPE.saveData("I", I);
+			if(Level.getTile( (Player.getX() + (ggMobDirection.x*4)), (Player.getY() + (ggMobDirection.y*4)), (Player.getZ() + (ggMobDirection.z*4)) )==1) {
+				setTile((Player.getX() + (ggMobDirection.x*4))+1, (Player.getY() + (ggMobDirection.y*4)), (Player.getZ() + (ggMobDirection.z*4)), 0);
+				 				clientMessage("remove")
+			}
+		}
+			X = getPlayerX();
+			Y = getPlayerY();
+			Z = getPlayerZ();
+			C = Level.getTile(X, Y+2, Z);
+			 		if(I==0) {
+			if(Level.getTile( (Player.getX() + (ggMobDirection.x*4)), (Player.getY() + (ggMobDirection.y*4)), (Player.getZ() + (ggMobDirection.z*4)) )==0) {
+			setTile((Player.getX() + (ggMobDirection.x*4)), (Player.getY() + (ggMobDirection.y*4)), (Player.getZ() + (ggMobDirection.z*4)),1);
+				I=1;
+
+				ModPE.saveData("I", I);
+		}
+		}
+		}
+	}
+		
+var tick=1;
+var ggMob;
+var isPickingEntity = false;
+
+function vector3d(x, y, z)
+{
+	this.x = x;
+	this.y = y;
+	this.z = z;
+}
+
+function lookDir(yaw, pitch)
+{
+	var direction = new vector3d(0, 0, 0);
+	direction.y = -Math.sin(java.lang.Math.toRadians(pitch));
+	direction.x = -Math.sin(java.lang.Math.toRadians(yaw)) * Math.cos(java.lang.Math.toRadians(pitch));
+	direction.z = Math.cos(java.lang.Math.toRadians (yaw)) * Math.cos(java.lang.Math.toRadians(pitch));
+	return direction;
+}
