@@ -1,0 +1,247 @@
+//Extreme Herobrine 4 Mod
+
+//Warning do not touch
+this.Closed = 0;;this.Spawned = 0;this.Killed = 0;
+var Herobrine;
+var tick = 0;
+var storytick = 0;
+var fase1tick = 0;
+var fase1=0;
+function newLevel(){
+
+this.lastDied = [0,0,0];this.CorrectMap = 0;
+
+
+if(Level.getWorldName() == "§lExtreme Herobrine §44"){
+
+clientMessage("§lExtreme Herobrine §44");
+clientMessage("§lThe Last Battle");
+clientMessage("§eyoutube.com/user/§4TheCreepLuigi");
+
+
+this.CorrectMap = 1;
+
+
+ }
+
+else{
+
+clientMessage("<BagasMC> §4You have to be in the map!!");
+
+}
+if(tick==0 && this.CorrectMap==1){
+setPosition(getPlayerEnt(),2267,69,91)
+}
+}
+function modTick(){
+if(this.CorrectMap == 1){
+this.X = Math.round(Player.getX());this.Y = Math.round(Player.getY());this.Z = Math.round(Player.getZ());this.PX = Player.getPointedBlockX();this.PY = Player.getPointedBlockY();this.PZ = Player.getPointedBlockZ();this.Health = Entity.getHealth(getPlayerEnt());this.PName =Player.getName(getPlayerEnt());
+if(this.Spawned==2){
+Entity.setPosition(Herobrine, 2515,74,-10 );
+Entity.setVelY(Herobrine,0.001);
+}
+if(this.X==2267 && this.Y==69 && this.Z==91 && tick == 0 || this.X==2267 && this.Y==69 && this.Z==92 && tick == 0 || this.X==2267 && this.Y==69 && this.Z==93 && tick == 0){
+tick=1;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Where...i am i?")
+ModPE.showTipMessage("§4Dream Land")
+}
+if(this.X==2260 && this.Y==69 && this.Z==91 && tick == 1 || this.X==2260 && this.Y==69 && this.Z==92 && tick == 1 || this.X==2260 && this.Y==69 && this.Z==93 && tick == 1){
+tick=2;
+BackPlayer(false);
+ChangeSound("spooky sfx.mp3",false);
+}
+if(this.X==2253 && this.Y==69 && this.Z==91 && tick == 2 || this.X==2253 && this.Y==69 && this.Z==92 && tick == 2 || this.X==2253 && this.Y==69 && this.Z==93 && tick == 2){
+tick=3;
+ChangeSound("spooky sfx.mp3",false);
+}
+if(this.X==2250 && this.Y==69 && this.Z==91 && tick == 3 || this.X==2250 && this.Y==69 && this.Z==92 && tick == 3 || this.X==2250 && this.Y==69 && this.Z==93 && tick == 3){
+tick=4;
+ChangeSound("Scream sfx.mp3",false);
+}
+if(this.X==2246 && this.Y==69 && tick == 4){
+tick=5;
+clientMessage("MISSION : Find a glass and destroy it to open the secret door")
+}
+if(this.Z==94 && this.Y==70 && tick == 5){
+tick=6;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Whats inside that path? Ill check out")
+}
+if(this.Y==34 && tick == 6){
+tick=7;
+setPosition(getPlayerEnt(),2229,77,15)
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> AAAAAAAAAAAAAAAHHHH")
+}
+if(this.X==2229 && this.Y==77 && this.Z==15 && tick==7){
+tick=8;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> AAAAA...oh it was just a dream")
+}
+if(this.X==2229 && this.Y==77 && this.Z==15 && tick==8){
+tick=9;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> ill go mining...")
+}
+if(this.X==2232 && this.Y==69 && tick==9){
+tick=10;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Oh, i forgot to refill the water storage.")
+clientMessage("MISSION : GRAB THE BUCKET IN THE CHEST AND GO BACK UP")
+}
+if(this.Z==16 && this.Y==77 && tick==10){
+tick=11;
+clientMessage("MISSION : FOLLOW THE PATH OUTSIDE")
+}
+if(this.Y==81 && this.Z==2 && tick==11){
+tick=12;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Ill put the water here and go back to mining")
+}
+if(this.Y==69 && this.Z==7 && tick==12){
+tick=13;
+clientMessage("nullDEVICEeRROR==walk straight..")
+}
+if(this.Y==69 && this.Z==2 && tick==13){
+tick=14;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> What? A hole? I never digged on that place before.. i better check it out")
+}
+if(this.X==2247 && this.Y==69 && tick==14){
+tick=15;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Dafuq is this")
+}
+if(this.X==2252 && this.Y==69 && tick==15){
+tick=16;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> I think i know what to do..")
+}
+if(this.X==2274 && this.Y==69 && tick==16){
+tick=17;
+clientMessage("<...> I have prepared ¿? for !¡..")
+}
+if(this.X==2322 && this.Y==69 && tick==17){
+tick=18;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Whew... looks like this path is very long")
+}
+if(this.X==2358 && this.Y==69 && tick==18){
+tick=19;
+ChangeSound("scary girl scream.mp3",false)
+}
+if(this.X==2370 && this.Y==69 && tick==19){
+tick=20;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Im tired..")
+}
+if(this.X==2449 && this.Y==69 && tick==20){
+tick=21;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> AAAARGHH IM TIRED")
+}
+if(this.X==2459 && this.Y==69 && tick==21){
+tick=22;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Finally, a place to rest..")
+}
+if(this.Z==-8 && this.Y==69 && tick==22){
+tick=23;
+clientMessage("<...> Grab the items on the chest...")
+}
+if(this.X==2469 && this.Y==69 && tick==23){
+tick=24;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> I think im near to the end")
+}
+if(this.X==2480 && this.Y==69 && tick==24){
+tick=25;
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> Finally..")
+}
+if(this.X==2501 && this.Y==69 && tick==25){
+tick=26;
+ChangeSound("evil laugh.mp3",false)
+fase1=1;
+}
+if(fase1==1){
+fase1tick++;
+}
+if(fase1tick==80){
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> W..Who are you??")
+Herobrine = Level.spawnMob(2515,71,-10,39,"mob/herobrine.png");
+Entity.setRenderType(Herobrine,3);
+Entity.setHealth(Herobrine,250);
+this.Spawned=2;
+}
+if(fase1tick==130){
+clientMessage("<Herobrine> I've been waiting for you, if you dare. FIGHT ME.")
+}
+if(fase1tick==170){
+clientMessage("<" + Player.getName(getPlayerEnt()) + "> B-But.. I... i...")
+ChangeSound("DV_DRUMNBASS.mp3",false)
+this.Spawned=1;
+Entity.setPosition(Herobrine, 2516,69,-4 );
+Entity.setHealth(Herobrine,250);
+}
+
+
+Entity.setPosition
+DeathNote: if(this.Health < 1 && this.Killed == 0){
+this.Killed = 1;
+this.lastDied = [this.X,this.Y,this.Z];
+clientMessage("<BagasMC> §4Ehm.... type /back to get back");
+break DeathNote
+
+}
+
+if(this.Killed == 1 && this.X == this.lastDied[0] && this.Y == this.lastDied[1] && this.Z == this.lastDied[2]){
+
+this.Killed = 0;
+
+}
+
+ }
+}
+
+var thundertick=20;
+
+this.Card = android.os.Environment.getExternalStorageDirectory();
+
+function BackPlayer(loop){
+
+this.back=new android.media.MediaPlayer();
+
+this.back.setDataSource(this.Card + "/games/Sound/spooky sfx.mp3");
+
+this.back.prepare();
+
+this.back.setLooping(loop);
+
+}
+
+function ChangeSound(song,loop){
+
+this.back.stop
+
+this.back.reset();
+
+this.back.setDataSource(this.Card + "/games/Sound/" + song);
+
+this.back.prepare();
+
+this.back.setLooping(loop);
+
+this.back.start();
+
+}
+
+
+function leaveGame(){
+
+if(this.CorrectMap == 1){
+ if(this.Spawned == 1)
+  print("<Herobrine> §4 Where are you going to?! Loser!")
+
+ }
+}
+
+function procCmd(cmd){
+
+cmd = cmd.split(" ");
+
+if(cmd == "back"){
+
+clientMessage("Back to your death location.");
+setPosition(getPlayerEnt(),this.lastDied[0],this.lastDied[1] + 3,this.lastDied[2]);
+
+}
+
+}
+
+ModPE.overrideTexture("images/mob/herobrine.png", "http://i.imgur.com/o4tWVyT.png");
